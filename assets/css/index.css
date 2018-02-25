@@ -415,9 +415,6 @@
     border-radius: none !important;
     color: #4a4a4a !important;
 }
-
-
-
 /*pagenation end*/
 
 
@@ -874,6 +871,37 @@ a.btn-custom2 {
   color: #fff !important;
   border:2px solid #00aeef !important;
 }
+
+/*end*/
+
+
+
+/*img slide*/
+.hide-bullets {
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+.item {
+    cursor: pointer;
+}
+
+ul.hide-bullets > li {
+    display: inline-block;
+}
+
+.thumbnail img {
+    cursor: pointer;
+    width: 79px;
+    height: 70px;
+}
+
+.carousel-inner{
+  height: 400px;
+}
+
+/*end*/
 
 
 .form-control2:focus {
@@ -1921,6 +1949,12 @@ a.btn-custom2 {
 
   .ml-0 { left:0 !important; }
   .ml-90 { left:90px !important; }
+
+  /*img slide*/
+  /*.carousel-inner{
+    height: 400px;
+  }*/
+  /*end*/
 
 
   .mbg-redm{ background:#BF0603 !important; background-color:#BF0603; }
