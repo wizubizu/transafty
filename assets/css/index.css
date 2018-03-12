@@ -688,6 +688,20 @@
 }
 .__radio{margin-top: 0px !important}
 
+
+.__footer{
+  background-color: #00aeef !important;
+  margin-top: 10% !important;
+}
+
+.__footrow{
+  padding: 3% 0 3% 0 !important;
+}
+.__footcol{
+  padding-top: 15px !important;
+  color: #fff;
+}
+
 /*custom upload*/
 .form-style-fake5{
   position:absolute;top:0px;
