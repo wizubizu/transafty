@@ -116,7 +116,7 @@
 							</div>
 							<div class="form-group">
 								<label for="" class="f1">Phone number</label>
-								<input type="text" class="form-control f1" id="" placeholder="+234">
+								<input type="number" class="form-control f1" id="" placeholder="+234">
 							</div>
 							<div class="form-group">
 								<label for="" class="f1">Email address</label>
@@ -154,8 +154,8 @@
 								<label for="" class="f1">Select Individual or Company</label>
 								<select name="" id="input" class="form-control __selectind" required="">
 									<option value="select">Select</option>
-									<option value="individual">Individual</option>
 									<option value="company">Company</option>
+									<option value="individual">Individual</option>
 								</select>
 							</div>
 							<div class="form-group">
@@ -164,10 +164,13 @@
 							</div>
 
 							<div class="row">
-								<div class="col-md-6">
-									<a onclick="showPrevForm()">PREV</a>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm()">
+						        		<span class="arrow3"></span>PREV
+						        	</button>
+									
 								</div>
-								<div class="col-md-6">
+								<div class="col-md-6 col-sm-6 col-xs-6">
 									<button type="button" id="continuebtn" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm1()">NEXT
 							        	<span class="arrow2"></span>
 							    	</button>
@@ -241,9 +244,18 @@
 								</div>
 							</div>
 
-							<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm2()">NEXT
-					        	<span class="arrow2"></span>
-					    	</button>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm1()">
+						        		<span class="arrow3"></span>PREV
+						        	</button>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm2()">NEXT
+							        	<span class="arrow2"></span>
+							    	</button>
+								</div>
+							</div>
 						</div>
 						
 
@@ -291,9 +303,18 @@
 								</div>
 							</div>
 
-							<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm3()">NEXT
-					        	<span class="arrow2"></span>
-					    	</button>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm1()">
+						        		<span class="arrow3"></span>PREV
+						        	</button>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm3()">NEXT
+							        	<span class="arrow2"></span>
+							    	</button>
+								</div>
+							</div>
 						</div>
 
 
@@ -324,15 +345,24 @@
 							<div class="form-group">
 								<div class="checkbox">
 									<label>
-										<input type="checkbox" value="">
+										<input type="checkbox" value="" id="check_Box1">
 										I agree to the Terms and Condition.
 									</label>
 								</div>
 							</div>
 
-							<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;" data-toggle="modal" href='#modal-id'>SUBMIT
-					        	<span class="arrow2"></span>
-					        </button>
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm3()">
+						        		<span class="arrow3"></span>PREV
+						        	</button>
+								</div>
+								<div class="col-md-6 col-sm-6 col-xs-6">
+									<button type="button" class="sub_btn btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; " data-toggle="modal" href='#modal-id'>SUBMIT
+							        	<span class="arrow2"></span>
+							        </button>
+								</div>
+							</div>
 						</div>
 
 						
@@ -426,6 +456,7 @@
 
     <script type="text/javascript">
     	$(document).ready(function (){
+    		$('.sub_btn').hide();
 			$("#continuebtn").click(function (){
 				var ownerType = $('.__selectind').val();
 				if (ownerType === 'individual') {
@@ -446,6 +477,16 @@
 					$('#Third-Div').hide();
 				}
 			});
+
+
+			$("#check_Box1").click(function (){
+				if($("#check_Box1").is(":checked")){
+				$('.sub_btn').toggle();
+			}else{
+				$('.sub_btn').toggle();
+			}
+		});
+			
 		});
     </script>
     
@@ -465,7 +506,7 @@
 
 		function showNextForm2() {
 			$("#Third-Div").css("display", "none");
-			$("#Forth-Div").css("display", "block");
+			$("#Five-Div").css("display", "block");
 		};
 
 		function showNextForm3() {
@@ -480,8 +521,11 @@
 		};
 
 		function showPrevForm1() {
-			$("#Third-Div").css("display", "none");
-			$("#Second-Div").css("display", "block");
+			$('#Third-Div').css("display", "none");
+			$('#Second-Div').css("display", "block");
+			$('#First-Div').css("display", "none");
+			$("#Five-Div").css("display", "none");
+			$("#Forth-Div").css("display", "none");
 		};
 
 		function showPrevForm2() {
@@ -490,8 +534,31 @@
 		};
 
 		function showPrevForm3() {
-			$("#Five-Div").css("display", "none");
-			$("#Forth-Div").css("display", "block");
+			var ownerType = $('.__selectind').val();
+			if (ownerType === 'individual') {
+				$('#First-Div').css("display", "none");
+				$('#Second-Div').css("display", "none");
+				$('#Forth-Div').css("display", "none");
+				$("#Five-Div").css("display", "none");
+				$("#Third-Div").css("display", "block");
+			}else if(ownerType === 'company'){
+				$('#Third-Div').css("display", "none");
+				$('#Second-Div').css("display", "none");
+				$('#First-Div').css("display", "none");
+				$("#Five-Div").css("display", "none");
+				$("#Forth-Div").css("display", "block");
+			}
 		};
+
+		//fileupload for individual
+		$('input[id=base-input4]').change(function() {
+        $('#fake-input4').val($(this).val().replace("C:\\fakepath\\", ""));
+    	});
+
+    	//fileupload for both
+		$('input[id=base-input5]').change(function() {
+        $('#fake-input5').val($(this).val().replace("C:\\fakepath\\", ""));
+    	});
+		
 	</script>
 </html>
