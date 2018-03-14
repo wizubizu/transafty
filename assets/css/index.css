@@ -1557,8 +1557,14 @@ a.btn-custom2 {
   color: #fff !important;
   border:2px solid #00aeef !important;
 }
-.__carousel-inner{
-  height: 70vh !important;
+.__carousel-inner {
+    height: 90vh !important;
+}
+
+.__ph {
+    font-weight: 900 !important;
+    font-size: 44px !important;
+    color: #fff !important;
 }
 .__carousel{
   border: none !important;
@@ -2107,11 +2113,15 @@ ul.hide-bullets > li {
   /*transafty*/
   .__select {
     position: absolute! important;
-    top: 113% !important;
+    top: 92% !important;
     left: 3% !important;
     background: #fff !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.43) !important;
   }
+
+  .__section {
+    margin-top: 20% !important;
+}
 
   .__sele {
     width: 840px !important;
@@ -2256,13 +2266,16 @@ ul.hide-bullets > li {
     margin-right: 15px !important;
   }
   .__select {
-    position: unset! important;
-    top: 95% !important;
-    left: 7% !important;
+    position: absolute! important;
+    top: 79% !important;
+    left: 1% !important;
     background: #fff !important;
     box-shadow: 0 4px 10px rgba(0,0,0,0.43) !important;
-  }
+}
 
+.__carousel-inner {
+    height: 78vh !important;
+}
   .__sele {
     width: 620px !important;
     padding-right: 0px !important;
