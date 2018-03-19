@@ -896,6 +896,7 @@ a:focus, a:hover {
 /*adminsection*/
 .leftbar{
 	position: fixed;
+	padding-top: 42px;
 	left: 0%;
 	top: 0%;
 	background-color: white;
@@ -903,6 +904,11 @@ a:focus, a:hover {
 	width: 15%;
 	height: 100%;
 	transition: all .6s ease;
+	overflow-y: scroll;
+}
+
+.leftbar::-webkit-scrollbar {
+    width: 0px;
 }
 .butt_section{
 	padding: 35px;
@@ -925,8 +931,10 @@ a:focus, a:hover {
     padding: 4px;
 }
 .activedashboard{
-	background-color: #f9f9f9 !important;
-	color: #663fb5 !important;
+	/*background-color: #f9f9f9 !important;*/
+    color: #00aeef !important;
+    border-right: 2px solid #00aeef;
+    width: 197px;
 }
 .subactivedashboard{
 	/*background-color: #f9f9f9 !important;*/
@@ -1013,11 +1021,12 @@ i#closebtn {
 
 .leftbar p {
     background-color: white;
-    padding: 6px 40px;
-    margin-bottom: 1%;
+    padding: 3px 40px;
+    margin-bottom: 10%;
     text-align: left;
     color: black;
     cursor: pointer;
+    text-align: center;
 }
 
 /*THIS NEED TO BE DELETED IF YOUR TABLE LINE ARE NOT SHOWING*/

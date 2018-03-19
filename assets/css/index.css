@@ -619,7 +619,17 @@
   color: #707070 !important;
   font-size: 12px !important;
 }
+.__card31{
+  color: #00aeef !important;
+  font-size: 12px !important;
+  text-decoration: underline;
+}
 .__card4{padding-left: 15px !important;}
+
+.__card5{
+  color: green;
+  font-weight: bold; 
+}
 .__paginationt{
   margin-top: 30px !important;
   padding-left: 80px !important;
@@ -705,6 +715,127 @@
 }
 
 .__footp{width: 350px !important;}
+
+.__dashimg{
+  width: 30px;
+}
+
+.__dasmen{
+  margin-top:2%;
+  margin-bottom: 5%;
+}
+
+.__dashdropdown{
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
+  padding-bottom: 7px;
+  padding-top: 7px;
+  border-radius: 4px;
+  width: 152px;
+  padding-left: 10px;
+}
+
+.__dash{
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
+    border-radius: 4px;
+    padding-bottom: 5%;  
+}
+.__dash1{
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
+    border-radius: 4px;
+    width: 338px;  
+    padding-bottom: 5%;
+}
+
+.__dashrow{
+  padding: 10px 20px 0px;
+  margin-top: 10px;
+}
+
+.__dashrow1{
+  padding: 0px 20px 0px;
+  /*margin-top: 10px;*/
+}
+.__dashrow2{
+  padding: 10px 20px 0px;
+  /*margin-top: 10px;*/
+}
+.__dashpt{
+  font-size: 16px;
+  color: #4a4a4a;
+}
+.__dashpt1{
+  font-size: 16px;
+  color: #4a4a4a;
+}
+.__dashpt2{
+  font-size: 16px;
+  color: #4a4a4a;
+  margin-top: 8px;
+}
+.__dashhr{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.__dashimgr{
+  border-radius: 50%;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 7px 2px 2px 0px;
+    background: #e8e7ff;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.__dashimgr1{
+  border-radius: 50%;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 8px 2px 2px 2px;
+    background: #fbd5d3;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.__dashimgr2{
+  border-radius: 50%;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 8px 2px 2px 2px;
+    background: #ffffe3;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.__dashimgr3{
+    border-radius: 50%;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 8px 2px 2px 2px;
+    background: #e1ffe9;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+.__dashimgr4{
+    border-radius: 50%;
+    border: 1px solid;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    padding: 8px 2px 2px 2px;
+    background: #c7f0ff;
+    color: #fff;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
 
 /*custom upload*/
 .form-style-fake5{
@@ -2799,6 +2930,35 @@ ul.hide-bullets > li {
     text-align: center;
 }
 
+.__dash1 {
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
+    border-radius: 4px;
+    width: 100%;
+    padding-bottom: 5%;
+}
+
+.__dashdropdown {
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 100%;
+    padding-left: 10px;
+}
+.__navbar-brand2{
+    width: 300px;
+}
+
+.__smll{
+    margin-left: 30px;
+}
+
+.activedashboard {
+    /* background-color: #f9f9f9 !important; */
+    color: #00aeef !important;
+    border-right: 2px solid #00aeef;
+    width: 100%;
+}
 
 /*media query for effect button*/
 .btn-custom3.arrow-btn3 {
@@ -2864,7 +3024,7 @@ ul.hide-bullets > li {
     top: 0%;
     background-color: white;
     border-right: 1px solid #c0bebe33;
-    width: 23% !important;
+    width: 85% !important;
     height: 100%;
     transition: all .6s ease;
 }
