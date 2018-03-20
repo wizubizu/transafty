@@ -970,14 +970,15 @@ a:focus, a:hover {
 	z-index:1  !important;
 	
 }
-i#closebtn {
+img#closebtn {
     position: absolute;
-    top: 2%;
+    top: 3%;
     color: indianred;
     font-size: 21px;
     display: none;
     cursor: pointer;
     right: 5%;
+    width: 15px;
 }
 @media screen and (max-width: 992px) {
 	
@@ -988,7 +989,7 @@ i#closebtn {
 	display: block !important;
 	cursor: pointer !important;
 }
-i#closebtn {
+img#closebtn {
    display: block;
 }
 }
