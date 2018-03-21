@@ -716,8 +716,8 @@
 
 .__footp{width: 350px !important;}
 
-.__dashimg{
-  width: 30px;
+.__dashimg {
+    width: 25px;
 }
 
 .__dasmen{
@@ -730,22 +730,23 @@
     /* margin-bottom: 5%; */
 }
 
-.__dashdropdown{
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
-  padding-bottom: 7px;
-  padding-top: 7px;
-  border-radius: 4px;
-  width: 152px;
-  padding-left: 10px;
+.__dashdropdown {
+    box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 46px;
 }
 
 .__dash{
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
+    box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
     border-radius: 4px;
     padding-bottom: 5%;  
 }
 .__dash1{
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
+    box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
     border-radius: 4px;
     width: 338px;  
     padding-bottom: 5%;
@@ -754,6 +755,9 @@
 .__dashrow{
   padding: 10px 20px 0px;
   margin-top: 10px;
+}
+.__dashrown1{
+  background: #aee7fd;
 }
 
 .__dashrow1{
@@ -772,6 +776,10 @@
   font-size: 16px;
   color: #4a4a4a;
 }
+.__dashpta{
+  font-size: 16px;
+  color: #00aeef;
+}
 .__dashpt2{
   font-size: 16px;
   color: #4a4a4a;
@@ -780,6 +788,7 @@
 .__dashhr{
     margin-top: 1px;
     margin-bottom: 1px;
+    border: 1px solid #ddf6ff;
 }
 .__dashimgr{
   border-radius: 50%;
@@ -941,11 +950,13 @@
   padding-left: 35px;
 }
 .__dashmsg {
-    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.43);
+    /*box-shadow: 0px 0px 7px 0px rgba(0,0,0,0.43);*/
+    box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
     border-radius: 4px;
-    /*padding-bottom: 5%;*/
+    /* padding-bottom: 5%; */
+    margin-top: 18px;
     width: 983px;
-    /*height: 85vh;*/
+    /* height: 85vh; */
 }
 
 .__dashimgasr1{
@@ -1011,10 +1022,57 @@
     margin-bottom: 10px;
 }
 
+.__dashscrod {
+    overflow-y: scroll;
+    height: 66vh;
+    overflow-x: hidden;
+}
+
+.__dashscrod::-webkit-scrollbar {
+    width: 2px;
+    /*background-color: #d6f4ff;*/
+}
+.__dashscrod::-webkit-scrollbar-thumb {
+    background: #333; 
+}
+.__cardd{
+  padding: 20px 90px 0px 47px;
+}
+.__carddb {
+    padding: 20px 90px 0px 47px;
+}
+.__cardd1{
+    padding: 20px !important;
+    background: #f4f4f4;
+}
+
+.__cardp{
+  font-size: 16px;
+  font-weight: 300;
+}
+.__cardp1{
+font-size: 16px;
+    font-weight: 400;
+}
+
+.__bookt{
+  margin-top: 20%;
+}
+
+.__carddbok {
+    padding: 40px 20px 50px 20px !important;
+    background: #f4f4f4;
+}
+
 .time-right {
     float: right;
     color: #aaa;
-    margin-top: 10px;
+    margin-top: -7px;
+}
+.time-left {
+    float: left;
+    color: #aaa;
+    margin-top: -7px;
 }
 
 
@@ -1042,6 +1100,76 @@
     font-size: 12px;
 }
 
+.__msgcol5rd {
+  padding: 10px 45px;
+}
+
+.__daspossd {
+    position: relative;
+    padding: 8px 35px;
+}
+
+.__dassearcd {
+    position: absolute;
+    top: 14px;
+    left: 40px;
+}
+
+.__dasseapractive3d {
+    color: #4a4a4a !important;
+    background-color: #d6f4ff;
+    /* border-left: 3px solid #a3a0fb; */
+    padding: 10px 14px 10px 40px;
+    font-size: 13px;
+}
+.__dasseapractive3d1 {
+    color: #4a4a4a !important;
+    /*background-color: #d6f4ff;*/
+    /* border-left: 3px solid #a3a0fb; */
+    padding: 10px 14px 10px 40px;
+    font-size: 13px;
+}
+
+
+.__msgtext11 {
+    font-size: 16px;
+}
+
+.__navbar-brand2{
+  padding-top: 0px !important;
+  font-weight: 600 !important;
+  font-size: 15px !important;
+}
+
+.__daspta {
+    color: #707070;
+    font-size: 16px;
+    background-color: #d6f4ff;
+    padding: 10px 35px;
+}
+
+.__daspt {
+    color: #707070;
+    font-size: 16px;
+    padding: 10px 35px;
+}
+
+.__traccard{
+  padding: 30px;
+}
+
+.__cardtruck {
+    color: #4a4a4a !important;
+    font-size: 14px !important;
+}
+
+.__cardtruck1 {
+    padding: 12px !important;
+}
+
+.__pl{
+  padding-left: 0px;
+}
 /*custom upload*/
 .form-style-fake5{
   position:absolute;top:0px;
@@ -2474,6 +2602,32 @@ ul.hide-bullets > li {
     width: 70px;
 }
 
+.__dashdropdown {
+    box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 54px;
+}
+
+.__dashdropdownin {
+    box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 56px;
+}
+
+.__dashpt1on {
+    font-size: 16px;
+    color: #4a4a4a;
+    margin-left: -30px;
+}
+
   .btn-custom3.arrow-btn3 {
     padding-right: 25px;
     padding-left: 5px;
@@ -2574,6 +2728,30 @@ ul.hide-bullets > li {
     height: 30vh;
     padding: 20px;
     overflow-x: hidden;
+}
+
+.__cardd {
+    padding: 20px 55px 0px 47px;
+}
+
+.__carddb {
+    padding: 20px 20px 0px 30px;
+}
+
+.__carddbok {
+    padding: 25px 20px 22px 20px !important;
+    background: #f4f4f4;
+}
+
+.__daspt {
+    color: #707070;
+    font-size: 16px;
+    padding: 10px 31px;
+}
+
+.__dasp {
+    color: #707070;
+    font-size: 15px;
 }
 
   /*end*/
@@ -2689,6 +2867,7 @@ ul.hide-bullets > li {
     border-radius: 4px;
     width: 224px;
     padding-left: 10px;
+    margin-left: 0px;
 }
 
 .leftbar {
@@ -2740,9 +2919,39 @@ ul.hide-bullets > li {
     padding: 20px;
     overflow-x: hidden;
 }
-/*.__navbar-brand2{
-  width: 500px;
-}*/
+
+.__cardd {
+    padding: 15px 30px 0px 30px;
+}
+
+.__dashdropdown {
+    box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
+    padding-bottom: 7px;
+    padding-top: 7px;
+    border-radius: 4px;
+    width: 200px;
+    padding-left: 10px;
+    margin-left: 27px;
+}
+
+.__daspta {
+    color: #707070;
+    font-size: 13px;
+    background-color: #d6f4ff;
+    padding: 10px 35px;
+}
+
+.__daspt {
+    color: #707070;
+    font-size: 13px;
+    padding: 10px 31px;
+}
+
+.__dasp {
+    color: #707070;
+    font-size: 14px;
+}
+
 
 
 .btn-custom3.arrow-btn3 {
@@ -3253,6 +3462,7 @@ ul.hide-bullets > li {
     border-radius: 4px;
     width: 100%;
     padding-left: 10px;
+    margin-left: 0px;
 }
 .__navbar-brand2{
     width: 300px;
@@ -3274,7 +3484,7 @@ ul.hide-bullets > li {
     /* background-color: #f9f9f9 !important; */
     color: #00aeef !important;
     border-right: 2px solid #00aeef;
-    width: 100%;
+    width: 100% !important;
 }
 
 .__msgcol3 {
@@ -3292,6 +3502,22 @@ ul.hide-bullets > li {
 
 .__msgcol5 {
     padding-left: 15px;
+}
+
+.__cardd {
+    padding: 15px 15px 0px 15px;
+}
+
+.__traccard {
+    padding: 0px;
+}
+
+.__pl{
+  padding-left: 15px;
+}
+
+.__dashm {
+    padding: 37px;
 }
 
 /*media query for effect button*/
