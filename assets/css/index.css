@@ -937,6 +937,14 @@
     background: #333; 
 }
 
+.__dashscro::-moz-scrollbar {
+    width: 2px;
+    /*background-color: #d6f4ff;*/
+}
+.__dashscro::-moz-scrollbar-thumb {
+    background: #333; 
+}
+
 .__actr{
       font-size: 15px;
     font-weight: 900;
@@ -2761,7 +2769,7 @@ ul.hide-bullets > li {
     left: 0%;
     top: 0%;
     background-color: white;
-    border-right: 1px solid #c0bebe33;;
+    border-right: 1px solid #eff3f2 !important;
     width: 17% !important;
     height: 100%;
     transition: all .6s ease;

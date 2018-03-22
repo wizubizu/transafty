@@ -8,7 +8,7 @@ html {
 
 body {
 	/*font-family: 'Raleway', sans-serif;*/
-	/*font-family: '', sans-serif;*/
+	font-family: '', cera GR;
 	font-size: 14px;
 	color: #222222;
 	font-weight: normal;
@@ -900,11 +900,13 @@ a:focus, a:hover {
 	left: 0%;
 	top: 0%;
 	background-color: white;
-	border-right: 1px solid #c0bebe33;;
+	/*border-right: 1px solid #c0bebe33;*/
+	border-right: 1px solid #eff3f2;
 	width: 15%;
 	height: 100%;
 	transition: all .6s ease;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .leftbar::-webkit-scrollbar {
@@ -934,7 +936,8 @@ a:focus, a:hover {
 	/*background-color: #f9f9f9 !important;*/
     color: #00aeef !important;
     border-right: 2px solid #00aeef;
-    width: 197px;
+    /*width: 197px;*/
+    width: 100%;
 }
 .subactivedashboard{
 	/*background-color: #f9f9f9 !important;*/
@@ -1024,10 +1027,12 @@ i#closebtn {
     background-color: white;
     padding: 3px 40px;
     margin-bottom: 10%;
+    font-size: 13px;
     text-align: left;
-    color: black;
+    color: #4a4a4a;
     cursor: pointer;
     text-align: center;
+    font-weight: 400;
 }
 
 /*THIS NEED TO BE DELETED IF YOUR TABLE LINE ARE NOT SHOWING*/
