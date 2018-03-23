@@ -16,7 +16,8 @@
 	<!-- CUSTOM STYLES -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
-	<link href="assets/css/bootstrap-datepicker.css" rel="stylesheet" /> 
+	<link href="assets/css/bootstrap-datepicker.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.dropdown.css"> 
 
 
 	<!-- WEBFONT -->
@@ -153,7 +154,7 @@
 				</div>
 				<div class="col-md-3 col-sm-3 col-xs-6 __sele1">
 					<div class="__selep">
-						<p class="f1">Pick Truck</p>
+						<p class="f1">Pick Up</p>
 						<a class="btn btnh btn-select">
 			                <input type="hidden" class="btn-select-input" id="" name="" value="" />
 			                <span class="btn-select-value">Select an Item</span>
@@ -175,6 +176,8 @@
 			</div>
 		</div>
 	</div>
+
+	
 	<section class="__section">
 
 		<div class="container">
@@ -325,6 +328,28 @@
 			</div> -->
 			<!-- end -->
 
+			<!-- <div class="row">
+			    <div class="col-sm-4">
+			      <div class="text-info">Single Mode</div><br>
+			      <div class="dropdown-sin-1">
+			        <select style="display:none"  placeholder="Select">
+			            <option value="1">1</option>
+			            <option value="2">2</option>
+			            <option value="3">3</option>
+			            <option value="4">4</option>
+			            <option value="5">5</option>
+			            <option value="6">6</option>
+			            <option value="7">7</option>
+			            <option value="8">8</option>
+			            <option value="9">9</option>
+			            <option value="10">10</option>
+			            <option value="11">11</option>
+			            <option value="12">12</option>
+			        </select>
+			      </div>
+			    </div>
+			</div> -->
+
 			<p class="__get_started l-h1 f3 text-center">Getting Started with Transafty</p>
 			<div class="row">
 				<div class="col-md-3"></div>
@@ -463,14 +488,14 @@
 				</div>
 				<div class=" col-md-1 col-sm-1 f1 __footcol">
 					<p><a href=""><img src="assets/img/linkedin.svg"></a></p>
-					<p><a href=""><img src="assets/img/"></a></p>
-					<p><a href=""><img src="assets/img/"></a></p>
+					<p><a href=""><img src="assets/img/facebook-logo.svg" class="__footimg"></a></p>
+					<p><a href=""><img src="assets/img/twitte-logo.svg" class="__footimg"></a></p>
 				</div>
 			</div>
 		</div>
 		<hr>
 		<div class="container">
-			<p class="f1 __footcol"> <!-- &copy; -->Copyright 2017 - Transafty Delivery Service.&nbsp;  &bull;All rights reserved&nbsp;.</p>
+			<p class="f1 __footcol">Copyright 2017 - Transafty Delivery Services . All rights reserved.</p>
 		</div>
 	</footer>
 	
@@ -478,6 +503,8 @@
 
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap-datepicker.js"></script>
+    <script src="assets/js/jquery.dropdown.js"></script>
+    <script src="assets/js/mock.js"></script>
 </body>
 
 	
@@ -563,4 +590,75 @@
 //   interval: 3000
 // });
 	</script>
+
+
+<!-- serch dropdown -->
+	<script>
+    var Random = Mock.Random;
+    var json1 = Mock.mock({
+      "data|10-50": [{
+        name: function () {
+          return Random.name(true)
+        },
+        "id|+1": 1,
+        "disabled|1-2": true,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-1').dropdown({
+      data: json1.data,
+      limitCount: 40,
+      multipleMode: 'label',
+      choice: function () {
+        // console.log(arguments,this);
+      }
+    });
+
+    var json2 = Mock.mock({
+      "data|10000-10000": [{
+        name: function () {
+          return Random.name(true)
+        },
+        "id|+1": 1,
+        "disabled": false,
+        groupName: 'Group Name',
+        "groupId|1-4": 1,
+        "selected": false
+      }]
+    });
+
+    $('.dropdown-mul-2').dropdown({
+      limitCount: 5,
+      searchable: false
+    });
+
+    $('.dropdown-sin-1').dropdown({
+      readOnly: true,
+      input: '<input type="text" maxLength="20" placeholder="Search">'
+    });
+
+    $('.dropdown-sin-2').dropdown({
+      data: json2.data,
+      input: '<input type="text" maxLength="20" placeholder="Search">'
+    });
+  </script>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!--  -->
 </html>

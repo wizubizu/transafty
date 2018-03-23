@@ -737,7 +737,7 @@
     border-radius: 4px;
     width: 200px;
     padding-left: 10px;
-    margin-left: 46px;
+    margin-left: 25px;
 }
 
 .__dash{
@@ -1177,6 +1177,9 @@ font-size: 16px;
 
 .__pl{
   padding-left: 0px;
+}
+.__footimg{
+  width: 16px;
 }
 /*custom upload*/
 .form-style-fake5{
