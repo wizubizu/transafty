@@ -401,6 +401,8 @@
 }
 .__selep a{
   border-bottom: 1px solid #00aeef !important;
+  border: none;
+  border-radius: 0px;
 }
 .__seleb{
   width: 130px !important;
@@ -544,7 +546,7 @@
 .__rentform{
   border: 1px solid #e4e6e8;
   background: #fff;
-  padding: 30px !important;
+  padding: 20px 30px 50px 30px !important;
   box-shadow: 0 4px 10px rgba(0,0,0,0.43);
 }
 .__rentform p{
@@ -3681,6 +3683,9 @@ ul.hide-bullets > li {
      width: 100%; 
     padding-left: 10px;
      margin-left: 1px; 
+}
+.__mobilecenter{
+  margin-left: 60px;
 }
 
 /*media query for effect button*/
