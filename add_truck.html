@@ -1,0 +1,565 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Transafty</title>
+	
+
+	<!-- STYLESHEETS-->
+	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
+
+	<!-- CUSTOM STYLES -->
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/jquery.dropdown.css"> 
+	
+
+
+	<!-- WEBFONT -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway">
+
+	<!-- ICON -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="">
+
+		
+
+		<div class="section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="leftbar">
+							<img src="assets/img/cross-out.svg" id="closebtn">
+							<!-- <i class="fa fa-times" id="closebtn"></i> -->
+							<div class="">
+								<p class="" >
+
+									<a href="owner_dashboard.html">
+										<img src="assets/img/tover1.svg"><br>
+										OVERVIEW
+									</a>
+								</p>
+								<p class="" >
+									<a href="dashboard.html">
+										<img src="assets/img/tdash.svg"><br>
+										DASHBOARD
+									</a>
+								</p>
+								<p class="" >
+									<a href="inbox.html">
+										<img src="assets/img/tmsg.svg"><br>
+										INBOX
+									</a>
+								</p>
+								<p class="" >
+									<a href="delivery.html">
+										<img src="assets/img/ttruck.svg"><br>
+										DELIVERIES
+									</a>
+								</p>
+								<p class="" >
+									<a href="booking.html">
+										<img src="assets/img/t2.svg"><br>
+										BOOKINGS
+									</a>
+								</p>
+								<p class="" >
+									<a href="transation.html">
+										<img src="assets/img/t4.svg"><br>
+										TRANSACTIONS
+									</a>
+								</p>
+								<p class="activedashboard" >
+									<a href="truck.html">
+										<img src="assets/img/t4t.svg"><br>
+										TRUCKS
+									</a>
+								</p>
+								<p class="" >
+									<a href="settings">
+										<img src="assets/img/tsupport.svg"><br>
+										SETTINGS
+									</a>
+								</p>
+								<p class="" >
+									<a href="support.html">
+										<img src="assets/img/t10.svg"><br>
+										SUPPORT
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-10 __dasmenmsg">
+						
+						<div class="row">
+							<div class="col-md-8 col-sm-8 col-xs-4">
+								<a href="#" class="navbar-brand __navbar-brand1" id="openSidebar"><i class=" fa fa-bars" onclick="openSidebar()" ></i></a>
+
+								<a class="navbar-brand __navbar-brand2" href=""><span><img src="assets/img/uimg.svg" alt="" class="logo"></span>&nbsp; &nbsp;<span>JOHNSON TRUCKS</span></a>
+							</div>
+						
+							<div class="col-md-4 col-sm-4 col-xs-8">
+								<ul class="dropdown __dashdropdown">
+									<a href="#" class="dropdown-toggle " data-toggle="dropdown"><img src="assets/img/avatar.png" class="img-circle __dashimg">&nbsp; &nbsp;&nbsp; &nbsp;<span>Abimbola</span>
+									</a>
+									<ul class="dropdown-menu __dropmenu">
+										<div class="text-center __switch">
+											Switch Agency
+										</div>
+										<li>
+											<a href="">
+											<img src="assets/img/avatar.png" class=" img-circle __dashimg">&nbsp; &nbsp; Agency 1</a>
+										</li>
+										<li>
+											<a href="">
+											<img src="assets/img/avatar.png" class=" img-circle __dashimg">&nbsp; &nbsp;Agency 2</a>
+										</li>
+									</ul>
+								</ul>
+							</div>
+						</div>
+						<div class="__dashmsg">
+							<p class="f3 __dashmsgp">Trucks Upload Details</p>
+							<hr class="__dashhr">
+							<div class="__addrea">
+								<div class="row">
+									<div class="col-md-2 col-sm-2"></div>
+									<div class="col-md-8 col-sm-8">
+										<form action="" method="POST" role="form" class="">
+											<div class="" id="First-Div">
+												<div class="form-group">
+													<label for="" class="f1">Status</label>
+													<select name="" id="input" class="form-control">
+														<option value="">Avaliable</option>
+														<option value="">Not Avaliable</option>
+													</select>
+												</div>
+
+												<div class="form-group">
+													<label for="" class="f1">Truck Image(s) you can select multiple images</label>
+													<input type="file" class="form-control" id="files" name="files[]" multiple>
+												</div>
+												<div class="form-group">
+													<label for="" class="f1">Vehicle Type</label>
+													<select name="" id="input" class="form-control">
+											            <option value="1">select</option>
+											            <option value="2">HEAVY/LIGHT DUTY TRUCKS & VANS </option>
+											            <option value="3">SEMI-TRAILER</option>
+											            <option value="4">TOWING TRUCKS/ROAD WRECKER</option>
+											            <option value="5">SEWAGE TRUCKS (FAECAL SUCTION TRUCKS)</option>
+											            <option value="6">MOVERS & PACKERS</option>
+											            <option value="7">CONSTRUCTION MACHINERY</option>
+											        </select>
+												</div>
+
+												<div class="form-group">
+													<label for="" class="f1">License Plate Number</label>
+													<input type="number" class="form-control" name="" id="" placeholder="">
+												</div>
+
+												
+												
+
+												<div class="row">
+													<div class="col-md-8 col-sm-8"></div>
+													<div class="col-md-4 col-sm-4">
+														<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm()">NEXT
+												        	<span class="arrow2"></span>
+												    	</button>
+													</div>
+												</div>
+											</div>	
+												
+											
+
+											<!-- 2 -->
+											<div class="" id="Second-Div" style="display: none;">
+												<div class="form-group">
+													<label for="" class="f1">Vehicle Color</label>
+													<input type="text" class="form-control" name="" id="" placeholder="">
+												</div>
+
+												<div class="form-group">
+													<label for="" class="f1">Vehicle Model</label>
+													<input type="text" class="form-control" name="" id="" placeholder="">
+												</div>
+
+												<div class="form-group">
+													<label for="" class="f1">Chasis Number</label>
+													<input type="text" class="form-control" name="" id="" placeholder="">
+												</div>
+
+												<div class="form-group">
+													<label for="" class="f1">Basic Description</label>
+													<textarea name="" id="input" class="form-control" rows="3"></textarea>
+												</div>
+
+												
+												
+
+												<div class="row">
+													<div class="col-md-8 col-xs-6 col-sm-8">
+														<button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm()">
+											        		<span class="arrow3"></span>PREV
+											        	</button>
+														
+													</div>
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm1()">NEXT
+												        	<span class="arrow2"></span>
+												    	</button>
+													</div>
+												</div>
+											</div>
+
+
+											<!-- 3 individual -->
+											<div class="" id="Third-Div" style="display: none;">
+												<div class="form-group">
+													<label for="" class="f1">Location (Truck current location)</label>
+													<div class="dropdown-sin-1">
+												        <select style="display:none"  placeholder="Select">
+												            <option value="1">select</option>
+												            <option value="2">2</option>
+												            <option value="3">3</option>
+												            <option value="4">4</option>
+												            <option value="5">5</option>
+												            <option value="6">6</option>
+												            <option value="7">7</option>
+												            <option value="8">8</option>
+												            <option value="9">9</option>
+												            <option value="10">10</option>
+												            <option value="11">11</option>
+												            <option value="12">12</option>
+												        </select>
+												    </div>
+												</div>
+
+												<div class="form-group">
+													<label for="" class="f1">Destination ( Where your Truck can reach)</label>
+													<div class="dropdown-mul-2">
+	        											<select style="display:none"  name="" id="mul-2" multiple placeholder="Select">
+												            <option value="1">select</option>
+												            <option value="2">2</option>
+												            <option value="3">3</option>
+												            <option value="4">4</option>
+												            <option value="5">5</option>
+												            <option value="6">6</option>
+												            <option value="7">7</option>
+												            <option value="8">8</option>
+												            <option value="9">9</option>
+												            <option value="10">10</option>
+												            <option value="11">11</option>
+												            <option value="12">12</option>
+												        </select>
+												    </div>
+												</div>
+
+												<div class="form-group">
+													<label for="" class="f1">Freight Type</label>
+													<div class="dropdown-mul-2">
+        												<select style="display:none"  name="" id="mul-2" multiple placeholder="Select" class="__selectind" >
+												            <option value="1">select</option>
+												            <option value="2">Dry Cargo</option>
+												            <option value="3">Wet Cargo</option>
+												            <option value="4">Containerized Cargo</option>
+												            <option value="5">Others (Please Specify)</option>
+												       </select>
+												    </div>
+
+												    <div class="" id="other">
+														<div class="form-group" style="display:none">
+															<label for="" class="f1">Others (Please Specify)</label>
+															<input type="text" class="form-control" name="" id="" placeholder="">
+														</div>
+													</div>
+												</div>
+
+												
+
+												<div class="form-group">
+													<label for="" class="f1">Delivery Type</label>
+													<input type="text" class="form-control" name="" id="" placeholder="">
+												</div>
+
+												<div class="row">
+													<div class="col-md-8 col-sm-8 col-xs-6">
+														<button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm1()">
+											        		<span class="arrow3"></span>PREV
+											        	</button>
+													</div>
+													<div class="col-md-4 col-sm-4 col-xs-6">
+														<button type="submit" class=" btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addsubbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; " data-toggle="modal" href='#modal-id'>SUBMIT
+												        	<span class="arrow2"></span>
+												        </button>
+													</div>
+												</div>
+
+
+												<label for="db">Choose type</label>
+<!-- <select name="dbType" id="dbType">
+   <option>Choose Database Type</option>
+   <option value="oracle">Oracle</option>
+   <option value="mssql">MS SQL</option>
+   <option value="mysql">MySQL</option>
+   <option value="other">Other</option>
+</select>
+
+<div id="otherType" style="display:none;">
+<label for="specify">Specify</label>
+<input type="text" name="specify" placeholder="Specify Databse Type"/>
+</div> -->
+											</div>
+										</form>
+									</div>
+									<div class="col-md-2 col-sm-2"></div>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+			</div>
+		</div>
+
+
+	
+
+
+	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
+
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+     <script src="assets/js/jquery.dropdown.js"></script>
+    <script src="assets/js/mock.js"></script>
+</body>
+
+
+<script type="text/javascript">
+
+// $('#dbType').on('change',function(){
+//     if( $(this).val()==="other"){
+//     $("#otherType").show()
+//     }
+//     else{
+//     $("#otherType").hide()
+//     }
+// });
+
+	
+    	$(document).ready(function (){
+    		$('.sub_btn').hide();
+			$("#continuebtn").click(function (){
+				var ownerType = $('.__selectind').val();
+				if (ownerType === 'Others') {
+					$('#Third-Div').show();
+					$('#First-Div').hide();
+					$('#Second-Div').hide();
+					$('#Forth-Div').hide();
+					$('#Five-Div').hide();
+				}else if(ownerType === 'company'){
+					$('#Forth-Div').show();
+					$('#Third-Div').hide();
+					$('#Second-Div').hide();
+					$('#First-Div').hide();
+					$('#Five-Div').hide();
+				}else if(ownerType === "select"){
+					alert('please select Individual or Company');
+					$('#Second-Div').show();
+					$('#Third-Div').hide();
+				}
+			});
+
+
+			$("#check_Box1").click(function (){
+				if($("#check_Box1").is(":checked")){
+				$('.sub_btn').toggle();
+			}else{
+				$('.sub_btn').toggle();
+			}
+		});
+			
+		});
+    </script>
+
+	<script type="text/javascript">
+  		$('#openSidebar').click(function(){
+			$('.leftbar').addClass('biger');
+		});
+		$('#closebtn').click(function(){
+			$('.leftbar').removeClass('biger');
+		});
+    </script>
+
+    <!-- for the next and previous form  -->
+	
+	<script type="text/javascript">
+    	function showNextForm() {
+			$("#First-Div").css("display", "none");
+			$("#Second-Div").css("display", "block");
+		};
+
+		function showNextForm1() {
+			$("#Second-Div").css("display", "none");
+			$("#Third-Div").css("display", "block");
+		};
+
+		function showNextForm2() {
+			$("#Third-Div").css("display", "none");
+			$("#Five-Div").css("display", "block");
+		};
+
+		function showNextForm3() {
+			$("#Forth-Div").css("display", "none");
+			$("#Five-Div").css("display", "block");
+		};
+
+		// previous 
+		function showPrevForm() {
+			$("#Second-Div").css("display", "none");
+			$("#First-Div").css("display", "block");
+		};
+
+		function showPrevForm1() {
+			$('#Third-Div').css("display", "none");
+			$('#Second-Div').css("display", "block");
+			$('#First-Div').css("display", "none");
+			$("#Five-Div").css("display", "none");
+			$("#Forth-Div").css("display", "none");
+		};
+
+		function showPrevForm2() {
+			$("#Forth-Div").css("display", "none");
+			$("#Third-Div").css("display", "block");
+		};
+
+		function showPrevForm3() {
+			var ownerType = $('.__selectind').val();
+			if (ownerType === 'individual') {
+				$('#First-Div').css("display", "none");
+				$('#Second-Div').css("display", "none");
+				$('#Forth-Div').css("display", "none");
+				$("#Five-Div").css("display", "none");
+				$("#Third-Div").css("display", "block");
+			}else if(ownerType === 'company'){
+				$('#Third-Div').css("display", "none");
+				$('#Second-Div').css("display", "none");
+				$('#First-Div').css("display", "none");
+				$("#Five-Div").css("display", "none");
+				$("#Forth-Div").css("display", "block");
+			}
+		};
+
+		//fileupload for individual
+		$('input[id=base-input4]').change(function() {
+        $('#fake-input4').val($(this).val().replace("C:\\fakepath\\", ""));
+    	});
+
+    	//fileupload for both
+		$('input[id=base-input5]').change(function() {
+        $('#fake-input5').val($(this).val().replace("C:\\fakepath\\", ""));
+    	});
+		
+	</script>
+
+    <!-- serch dropdown -->
+	<script>
+	    var Random = Mock.Random;
+	    var json1 = Mock.mock({
+	      "data|10-50": [{
+	        name: function () {
+	          return Random.name(true)
+	        },
+	        "id|+1": 1,
+	        "disabled|1-2": true,
+	        groupName: 'Group Name',
+	        "groupId|1-4": 1,
+	        "selected": false
+	      }]
+	    });
+
+	    $('.dropdown-mul-1').dropdown({
+	      data: json1.data,
+	      limitCount: 40,
+	      multipleMode: 'label',
+	      choice: function () {
+	        // console.log(arguments,this);
+	      }
+	    });
+
+	    var json2 = Mock.mock({
+	      "data|10000-10000": [{
+	        name: function () {
+	          return Random.name(true)
+	        },
+	        "id|+1": 1,
+	        "disabled": false,
+	        groupName: 'Group Name',
+	        "groupId|1-4": 1,
+	        "selected": false
+	      }]
+	    });
+
+	    $('.dropdown-mul-2').dropdown({
+	      limitCount: 20,
+	      searchable: false
+	    });
+
+	    $('.dropdown-sin-1').dropdown({
+	      readOnly: true,
+	      input: '<input type="text" maxLength="20" placeholder="Search">'
+	    });
+
+	    $('.dropdown-sin-2').dropdown({
+	      data: json2.data,
+	      input: '<input type="text" maxLength="20" placeholder="Search">'
+	    });
+  	</script>
+
+  	<!-- for upload images -->
+  	<script type="text/javascript">
+  		$(document).ready(function() {
+		  if (window.File && window.FileList && window.FileReader) {
+		    $("#files").on("change", function(e) {
+		      var files = e.target.files,
+		        filesLength = files.length;
+		      for (var i = 0; i < filesLength; i++) {
+		        var f = files[i]
+		        var fileReader = new FileReader();
+		        fileReader.onload = (function(e) {
+		          var file = e.target;
+		          $("<span class=\"pip\">" +
+		            "<img class=\"imageThumb\" src=\"" + e.target.result + "\" title=\"" + file.name + "\"/>" +
+		            "<br/><span class=\"remove\">Remove image</span>" +
+		            "</span>").insertAfter("#files");
+		          $(".remove").click(function(){
+		            $(this).parent(".pip").remove();
+		          });
+		          
+		          // Old code here
+		          /*$("<img></img>", {
+		            class: "imageThumb",
+		            src: e.target.result,
+		            title: file.name + " | Click to remove"
+		          }).insertAfter("#files").click(function(){$(this).remove();});*/
+		          
+		        });
+		        fileReader.readAsDataURL(f);
+		      }
+		    });
+		  } else {
+		    alert("Your browser doesn't support to File API")
+		  }
+		});
+  	</script>
+  	<!-- end -->
+
+
+  	
+</html>

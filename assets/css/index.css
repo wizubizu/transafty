@@ -1239,6 +1239,55 @@ font-size: 16px;
 .__footimg{
   width: 16px;
 }
+
+.__priv{
+  line-height: 2;
+  text-align: justify;
+}
+
+.__addrea{
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.__addbtn{
+  margin-left: 64px;
+}
+
+.__addsubbtn {
+  margin-left: 53px;
+}
+
+
+/*for upload images*/
+input[type="file"] {
+  display: block;
+}
+.imageThumb {
+  max-height: 75px;
+  border: 1px solid #00aeef;
+  padding: 1px;
+  cursor: pointer;
+}
+.pip {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+}
+.remove {
+  display: block;
+  background: #00aeef;
+  border: 1px solid #00aeef;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+.remove:hover {
+  background: white;
+  color: black;
+}
+/*end*/
+
+
 /*custom upload*/
 .form-style-fake5{
   position:absolute;top:0px;
@@ -1673,11 +1722,21 @@ a.btn-custom2 {
     border-bottom: solid 5px transparent !important;
     border-right: solid 5px #fff;
 }
+.arrow:after {
+    content: ' ';
+    position: absolute !important;
+    top: 4px !important;
+    height: 2px !important;
+    background: #202020 !important;
+    width: 15px !important;
+    right: 5px !important;
+    transition: all .3s ease !important;
+}
+
 
 
 .arrow3:after {
-    conteng: 12px 22px;
-    backt: ' ';
+    content: ' ';
     position: absolute !important;
     top: 4px !important;
     height: 2px !important;
@@ -1700,7 +1759,8 @@ a.btn-custom2 {
 }
 
 .btn-custom3 {
-    paddinground: #00aeef;
+    padding: 12px 22px;
+    background: #00aeef;
     color: #fff;
     border-radius: 3px;
     display: inline-block;
@@ -3084,6 +3144,18 @@ ul.hide-bullets > li {
     margin-left: 34px;
 }
 
+.__addbtn{
+  margin-left: 0px;
+}
+
+.__addsubbtn {
+  margin-left: 0px;
+}
+
+.__footp {
+    width: 100% !important;
+}
+
 
 
 .btn-custom3.arrow-btn3 {
@@ -3156,184 +3228,7 @@ ul.hide-bullets > li {
     color: #9b9b9b;
 }
   /*end*/
-    .twidth-60 {
-        width: 60px !important;
-    }
-    .twidth-110 {
-        width: 110px !important;
-    }
-    .twidth-200 {
-        width: 200px !important;
-    }
-    .twidth-210 {
-        width: 210px !important;
-    }
-    .twidth-225 {
-        width: 225px !important;
-    }
-    .twidth-250 {
-        width: 250px !important;
-    }
-    .twidth-270 {
-        width: 270px !important;
-    }
-    .twidth-280 {
-        width: 280px !important;
-    }
-    .twidth-300 {
-        width: 300px !important;
-    }
-    .twidth-303 {
-        width: 303px !important;
-    }
-    .twidth-310 {
-        width: 310px !important;
-    }
-    .twidth-313 {
-        width: 313px !important;
-    }
-    .twidth-334 {
-        width: 334px !important;
-    }
-    .twidth-356 {
-        width: 356px !important;
-    }
-    .twidth-370 {
-        width: 370px !important;
-    }
-    .twidth-400 {
-        width: 400px !important;
-    }
-    .twidth-437 {
-        width: 437px !important;
-    }
-    .twidth-522 {
-        width: 522px !important;
-    }
-    .twidth-586 {
-        width: 586px !important;
-    }
-    .twidth-620 {
-        width: 620px !important;
-    }
-    .twidth-700 {
-        width: 700px !important;
-    }
-    .twidth-70p {
-        width: 70% !important;
-    }
-    .twidth-75p {
-        width: 75% !important;
-    }
-    .twidth-97p {
-        width: 97% !important;
-    }
-    .twidth-100p {
-        width: 100% !important;
-    }
-    .tm-l-0 {margin-left:0px !important;}
-    .tm-l-20 {margin-left:20px !important;}
-    .tm-l-30 {margin-left:30px !important;}
-    .tm-l-40 {margin-left:40px !important;}
-    .tm-l-25p {margin-left:25% !important;}
-
-      
-    .th-130 {
-        height: 130px !important;
-    }
-    .th-110 {
-        height: 110px !important;
-    }
-    .th-230 {
-        height: 230px !important;
-    }
-    .th-260 {
-        height: 260px !important;
-    }
-    .th-274 {
-        height: 274px !important;
-    }
-    .th-300 {
-        height: 300px !important;
-    }
-    .th-509 { height:509px !important; }
-    .th-750 { height:750px !important; }
-    .th-870 { height:870px !important; }
-    .th-60p { height:60% !important; }
-    .th-auto { height:auto !important; }
-
-    .tt-0 { top:0; }
-    .tt-5 { top:5px; }
-
-    .tb-3 {
-        bottom: 3px !important;
-    }
-    .tb-_1036 {
-        bottom: -1036px !important;
-    }
-    .tb-_1085 {
-        bottom: -1085px !important;
-    }
-    .tp-l-15 {padding-left:15px !important;}
-    .tp-r-15{padding-right:15px !important;}
-
-    .tl-0 { left:0px !important; }
-    .tl-93 { left:93px !important; }
-    .tl-25p { left:25% !important; }
-    .tl-63p { left:63% !important; }
-    .tl-99p { left:99% !important; }
-    .tl-100p { left:100% !important; }
-
-
-    .tp-0 {padding:0 !important;}
-    .tp-5p {padding:5% !important;}
-
-
-
-    .tm-t-0{margin-top:0px !important;}
-    .tm-t-10{margin-top:10px !important;}
-    .tm-t-20{margin-top:20px !important;}
-    .tm-t-30{margin-top:30px !important;}
-    .tm-t-40{margin-top:40px !important;}
-    .tm-t-45{margin-top:45px !important;}
-    .tm-t-50{margin-top:50px !important;}
-    .tm-t-5p{margin-top:5% !important;}
-    .tm-t-7p{margin-top:7% !important;}
-    .tm-t-8p{margin-top:8%!important;}
-    .tm-t-10p{margin-top:10%!important;}
-
-    .tf-12{font-size:12px !important;}
-    .tf-13{font-size:13px !important;}
-    .tf-20{font-size:20px !important;}
-    .tf-25{font-size:25px !important;}
-    .tf-26{font-size:26px !important;}
-    .tf-27{font-size:27px !important;}
-    .tf-30{font-size:30px !important;}
-
-    .tp-t-10 {padding-top:10px !important;}
-    .tp-t-2p {padding-top:2% !important;}
-    .tp-t-4p {padding-top:4% !important;}
-    .tp-t-5p {padding-top:5% !important;}
-    .tp-t-10p {padding-top:10% !important;}
-    .tp-t-19p {padding-top:19% !important;}
-    .tp-t-23p {padding-top:23% !important;}
-    .tp-t-40p {padding-top:40% !important;}
-    .tp-t-50p {padding-top:50% !important;}
-    .tp-t-61p {padding-top:61% !important;}
-
-
-    .tp-b-0 {padding-bottom:0px !important;}
-    .tp-b-10p {padding-bottom:10% !important;}
-    .tp-b-19p {padding-bottom:19% !important;}
-    .tp-b-23p {padding-bottom:23% !important;}
-    .tp-b-50p {padding-bottom:50% !important;}
-    .tp-b-61p {padding-bottom:61% !important;}
-
-    .tpos-unset {position: unset;}
-
-
-    .mdis-unset {display:unset !important;}
-    .tdis-unset {display:unset !important;}
+    
 
 
     .btn-select {
@@ -3686,6 +3581,14 @@ ul.hide-bullets > li {
 }
 .__mobilecenter{
   margin-left: 60px;
+}
+
+.__addbtn{
+  margin-left: 0px;
+}
+
+.__addsubbtn {
+  margin-left: 0px;
 }
 
 /*media query for effect button*/
