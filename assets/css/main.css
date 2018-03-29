@@ -896,7 +896,8 @@ a:focus, a:hover {
 /*adminsection*/
 .leftbar{
 	position: fixed;
-	padding-top: 42px;
+	/*padding-top: 42px;*/
+	padding-top: 16px;
 	left: 0%;
 	top: 0%;
 	background-color: white;

@@ -313,6 +313,16 @@
   width: 150px !important;
 }
 
+.__dashlogoimg {
+    padding-top: 10px !important;
+    margin-right: 40px !important;
+    margin-bottom: 30px;
+    margin-left: 27px;
+}
+.__dashlogoimg img{
+  width: 150px !important;
+}
+
 .__menuli{
   margin-right: 20px !important;
 }
@@ -1336,7 +1346,7 @@ input[type="file"] {
   border-radius: 4px;
   /* margin-top: 20px; */
   cursor: pointer;
-  top: 39%;
+  top: 26%;
   border: 1px solid #ccc;
   width: 85% !important;
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
@@ -1345,7 +1355,7 @@ input[type="file"] {
 
 .input-place4{
   left: 95%;
-  top: -8px;
+  top: -2px;
   color: #9b9b9b;
 }
 
@@ -2782,6 +2792,12 @@ ul.hide-bullets > li {
     padding-left: 10px;
     margin-left: 81px;
 }
+
+.__dashlogoimg {
+    padding-top: 10px !important;
+    margin-bottom: 22px;
+    margin-left: 15px;
+}
 .__paginationt {
     /* margin-top: 30px !important; */
     padding-left: 77px !important;
@@ -2831,7 +2847,7 @@ ul.hide-bullets > li {
     border-radius: 4px;
     /* margin-top: 20px; */
     cursor: pointer;
-    top: 39%;
+    top: 25%;
     border: 1px solid #ccc;
     width: 82% !important;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
@@ -2948,12 +2964,6 @@ ul.hide-bullets > li {
 
     .mtpos-unset {position: unset;}
 
-}
-
-
-@media screen and (min-width: 1024px) and (max-height: 1310px) {
-    /* Laptop */
-    
 }
 
 
@@ -3156,6 +3166,12 @@ ul.hide-bullets > li {
     width: 100% !important;
 }
 
+.__dashlogoimg {
+    padding-top: 18px !important;
+    margin-bottom: 6px;
+    margin-left: 15px;
+}
+
 
 
 .btn-custom3.arrow-btn3 {
@@ -3197,7 +3213,7 @@ ul.hide-bullets > li {
     border-radius: 4px;
     /* margin-top: 20px; */
     cursor: pointer;
-    top: 34%;
+    top: 23%;
     border: 1px solid #ccc;
     width: 81% !important;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
@@ -3206,7 +3222,7 @@ ul.hide-bullets > li {
 
 .input-place4 {
     left: 91%;
-    top: -8px;
+    top: 0px;
     color: #9b9b9b;
 }
 
@@ -3591,6 +3607,19 @@ ul.hide-bullets > li {
   margin-left: 0px;
 }
 
+
+.__dashlogoimg {
+    padding-top: 0px !important;
+    margin-bottom: 22px;
+    margin-left: 50px;
+}
+
+.__addrea {
+    padding: 10px;
+}
+
+
+
 /*media query for effect button*/
 .btn-custom3.arrow-btn3 {
     padding-right: 12px;
@@ -3609,6 +3638,8 @@ ul.hide-bullets > li {
     background: #00aeef;
     color: #fff;
 }
+
+
 
 /*reg-truc-sub*/
 .btn-customs.arrow-btns {
@@ -3631,10 +3662,16 @@ ul.hide-bullets > li {
     border-radius: 4px;
     /* margin-top: 20px; */
     cursor: pointer;
-    top: 35%;
+    top: 23%;
     border: 1px solid #ccc;
     width: 81% !important;
     box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.input-place4 {
+    left: 91%;
+    top: 0px;
+    color: #9b9b9b;
 }
   /*end*/
 
