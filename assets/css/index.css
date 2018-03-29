@@ -1329,7 +1329,7 @@ input[type="file"] {
 
 .input-place5{
   left: 95%;
-  top: -11px;
+  top: 1px;
   color: #9b9b9b;
 }
 
@@ -2877,7 +2877,7 @@ ul.hide-bullets > li {
 
 .input-place5 {
     left: 92%;
-    top: -7px;
+    top: 6px;
     color: #9b9b9b;
 }
 
@@ -3244,7 +3244,7 @@ ul.hide-bullets > li {
 
 .input-place5 {
     left: 90%;
-    top: -4px;
+    top: 8px;
     color: #9b9b9b;
 }
   /*end*/
