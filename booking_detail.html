@@ -109,7 +109,7 @@
 								<input type="text" class="form-control" name="" id="" placeholder="">
 							</div>
 							<div class="form-group">
-								<label for="" class="f1">Origin</label>
+								<label for="" class="f1">Origin (Full details of Pick up location)</label>
 								<input type="text" class="form-control" name="" id="" placeholder="Full details">
 								<!-- <div class="dropdown-sin-1">
 							        <select style="display:none"  placeholder="Select">
@@ -130,7 +130,7 @@
 							</div>
 
 							<div class="form-group">
-								<label for="" class="f1">Destination</label>
+								<label for="" class="f1">Destination (Full details of drop-off location)</label>
 								<input type="text" class="form-control" name="" id="" placeholder="Full details">
 								<!-- <div class="dropdown-sin-1">
 							        <select style="display:none"  placeholder="Select">
@@ -174,8 +174,20 @@
 								<input type="number" class="form-control" name="" id="" placeholder="">
 							</div>
 							<div class="form-group">
-								<label for="" class="f1">Truck types</label>
-								<div class="dropdown-sin-1">
+								<label for="" class="f1">Pick up terminal</label>
+								<select name="dbType" id="dbType" class="form-control">
+									<option value="">Select</option>
+									<option value="">1st Gate</option>
+									<option value="">2nd Gate</option>
+									<option value="">Apapa</option>
+									<option value="">PTML</option>
+									<option value="">Sagamu</option>
+									<option value="other">Others (Please Specify)</option>
+								</select>
+
+								
+								
+								<!-- <div class="dropdown-sin-1">
 							        <select style="display:none"  placeholder="Select">
 							            <option value="1">select</option>
 							            <option value="2">HEAVY/LIGHT DUTY TRUCKS & VANS </option>
@@ -185,8 +197,45 @@
 							            <option value="6">MOVERS & PACKERS</option>
 							            <option value="7">CONSTRUCTION MACHINERY</option>
 							        </select>
-							    </div>
+							    </div> -->
 							</div>
+
+							<div class="form-group" id="otherType" style="display:none;">
+								<label for="" class="f1">Others (Please Specify)</label>
+								<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Pick up terminal">
+							</div>
+
+							<div class="form-group">
+
+								<label for="" class="f1">Drop off terminal</label>
+									<select name="dbType" id="dbType1" class="form-control">
+										<option value="">Select</option>
+										<option value="">1st Gate</option>
+										<option value="">2nd Gate</option>
+										<option value="">Apapa</option>
+										<option value="">PTML</option>
+										<option value="">Sagamu</option>
+										<option value="other">Others (Please Specify) </option>
+									</select>
+								
+								
+								<!-- <div class="dropdown-sin-1">
+							        <select style="display:none"  placeholder="Select">
+							            <option value="1">select</option>
+							            <option value="2">HEAVY/LIGHT DUTY TRUCKS & VANS </option>
+							            <option value="3">SEMI-TRAILER</option>
+							            <option value="4">TOWING TRUCKS/ROAD WRECKER</option>
+							            <option value="5">SEWAGE TRUCKS (FAECAL SUCTION TRUCKS)</option>
+							            <option value="6">MOVERS & PACKERS</option>
+							            <option value="7">CONSTRUCTION MACHINERY</option>
+							        </select>
+							    </div> -->
+							</div>
+							<div class="form-group" id="otherType1" style="display:none;">
+								<label for="" class="f1">Others (Please Specify)</label>
+								<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Drop off terminal">
+							</div>
+
 							<div class="form-group">
 								<label for="" class="f1">Number of trucks</label>
 								<input type="number" class="form-control" name="" id="" placeholder="">
@@ -222,7 +271,7 @@
 							</div>
 							<div class="form-group">
 								<label for="" class="f1">Shipping Company</label>
-								<div class="dropdown-sin-1">
+								<!-- <div class="dropdown-sin-1">
 							        <select style="display:none"  placeholder="Select">
 							            <option value="1">select</option>
 							            <option value="2">1st gate</option>
@@ -230,7 +279,27 @@
 							            <option value="4">Apapa</option>
 							            <option value="5">PTML</option>
 							        </select>
-							    </div>
+							    </div> -->
+
+							    <select name="dbType" id="dbType2" class="form-control">
+									<option value="">Select</option>
+									<option value="">MSC</option>
+									<option value="">CMA</option>
+									<option value="">Grimaldi</option>
+									<option value="">Hapag Llyod</option>
+									<option value="">Maersk Line</option>
+									<option value="">Safmarine</option>
+									<option value="">PIL</option>
+									<option value="">Arkas</option>
+									<option value="">UAC</option>
+									<option value="">St John</option>
+									<option value="other">Others (Please Specify) </option>
+								</select>
+							</div>
+
+							<div class="form-group" id="otherType2" style="display:none;">
+								<label for="" class="f1">Others (Please Specify)</label>
+								<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Shipping Company">
 							</div>
 
 
@@ -253,6 +322,8 @@
 								</div>
 							</div>
 						</div>
+						
+
 						
 
 
@@ -336,6 +407,37 @@
     <script src="assets/js/mock.js"></script>
 
     <script type="text/javascript">
+
+    	// show and hide select 
+		$('#dbType').on('change',function(){
+		    if( $(this).val()==="other"){
+		    $("#otherType").show()
+		    }
+		    else{
+		    $("#otherType").hide()
+		    }
+		});
+
+		$('#dbType1').on('change',function(){
+		    if( $(this).val()==="other"){
+		    $("#otherType1").show()
+		    }
+		    else{
+		    $("#otherType1").hide()
+		    }
+		});
+
+		$('#dbType2').on('change',function(){
+		    if( $(this).val()==="other"){
+		    $("#otherType2").show()
+		    }
+		    else{
+		    $("#otherType2").hide()
+		    }
+		});
+		// end
+
+
     	$(document).ready(function (){
     		$('.sub_btn').hide();
 			$("#continuebtn").click(function (){

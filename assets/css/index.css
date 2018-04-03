@@ -581,9 +581,14 @@
 
 .__get{
   margin-top: 5px !important;
-  color: #00aeef !important;
   font-size: 16px !important;
 }
+
+.__get a{
+  color: #00aeef !important;
+}
+
+
 .__term{
   margin-top: 5% !important;
   font-size: 16px !important;
@@ -1266,6 +1271,13 @@ font-size: 16px;
 
 .__addsubbtn {
   margin-left: 53px;
+}
+
+/*.__dnt{
+  margin-top: 10px;
+}*/
+.__dnt a{
+  color: #00aeef !important;
 }
 
 .alert {
