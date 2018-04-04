@@ -55,7 +55,7 @@
 										DASHBOARD
 									</a>
 								</p> -->
-								<p class="" >
+								<!-- <p class="" >
 									<a href="inbox.html">
 										<img src="assets/img/tmsg.svg"><br>
 										INBOX
@@ -66,7 +66,7 @@
 										<img src="assets/img/ttruck.svg"><br>
 										DELIVERIES
 									</a>
-								</p>
+								</p> -->
 								<p class="" >
 									<a href="booking.html">
 										<img src="assets/img/t2.svg"><br>
@@ -269,29 +269,30 @@
 
 												<div class="form-group">
 													<label for="" class="f1">Freight Type</label>
-													<div class="dropdown-mul-2">
-        												<select style="display:none"  name="" id="mul-2" multiple placeholder="Select" class="__selectind" >
-												            <option value="1">select</option>
-												            <option value="2">Dry Cargo</option>
-												            <option value="3">Wet Cargo</option>
-												            <option value="4">Containerized Cargo</option>
-												            <option value="5">Others (Please Specify)</option>
-												       </select>
-												    </div>
-
-												    <div class="" id="other">
-														<div class="form-group" style="display:none">
-															<label for="" class="f1">Others (Please Specify)</label>
-															<input type="text" class="form-control" name="" id="" placeholder="">
-														</div>
-													</div>
+													<select name="dbType" id="dbType" class="form-control">
+											            <option value="1">select</option>
+											            <option value="2">Dry Cargo</option>
+											            <option value="3">Wet Cargo</option>
+											            <option value="4">Containerized Cargo</option>
+											            <option value="other">Others (Please Specify)</option>
+											       </select>
+											    </div>
+												<div class="form-group" id="otherType" style="display:none;">
+													<label for="" class="f1">Others (Please Specify)</label>
+													<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Freight Type">
 												</div>
 
 												
 
 												<div class="form-group">
 													<label for="" class="f1">Delivery Type</label>
-													<input type="text" class="form-control" name="" id="" placeholder="">
+													<!-- <input type="text" class="form-control" name="" id="" placeholder=""> -->
+													<select name="" id="" class="form-control">
+														<option value="">Select</option>
+														<option value="">Local/Intra-City</option>
+														<option value="">Inter-City</option>
+														<option value="">Cross-Border</option>
+													</select>
 												</div>
 
 												<div class="row">
@@ -355,6 +356,17 @@
 //     $("#otherType").hide()
 //     }
 // });
+
+
+// show and hide select 
+		$('#dbType').on('change',function(){
+		    if( $(this).val()==="other"){
+		    $("#otherType").show()
+		    }
+		    else{
+		    $("#otherType").hide()
+		    }
+		});
 
 	
     	$(document).ready(function (){

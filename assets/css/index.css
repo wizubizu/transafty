@@ -559,8 +559,9 @@
   padding: 20px 30px 50px 30px !important;
   box-shadow: 0 4px 10px rgba(0,0,0,0.43);
 }
-.__rentform p{
-  font-size: 40px;
+.__rentform p {
+    font-size: 30px;
+    text-align: center;
 }
 
 .__forminput{margin-top: 10% !important;}
@@ -769,7 +770,8 @@
 .__overflow{
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 460px;
+  /*height: 460px;*/
+  height: 257px;
 }
 
 .__overflow1{
@@ -791,13 +793,15 @@
     border-radius: 4px;
     padding-bottom: 5%; 
     width: 623px;
-    height: 523px; 
+    /*height: 523px; */
+    height: 321px; 
 }
 .__dash1{
     box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
     border-radius: 4px;
     width: 347px;
-    height: 523px;  
+    /*height: 523px;*/  
+    height: 321px;  
     padding-bottom: 5%;
 }
 
@@ -1278,6 +1282,28 @@ font-size: 16px;
 }*/
 .__dnt a{
   color: #00aeef !important;
+}
+
+.__truimp{
+      font-size: 20px;
+    margin-top: 6px;
+}
+
+.__truckd{
+  box-shadow: 0px 0px 16px 0px rgba(241, 239, 239, 1);
+  margin-top: 5%;
+  padding: 20px 50px 50px 50px;
+}
+
+.__timg{
+  margin-top: 4%;
+}
+
+.__truckp{
+  margin-left: 100px;
+      margin-top: 42%;
+    font-size: 20px !important;
+  color: #4a4a4a !important;
 }
 
 .alert {
@@ -2457,7 +2483,7 @@ ul.hide-bullets > li {
     background-repeat: no-repeat;
 }
 .bg-head41{
-  background:linear-gradient(100deg, rgba(34, 34, 34, 0.5) 50%, rgba(34, 34, 34, 0.5) 50%), url(../img/landingpage.png);
+  background:linear-gradient(100deg, rgba(34, 34, 34, 0.5) 50%, rgba(34, 34, 34, 0.5) 50%), url(../img/vehicle.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -2818,6 +2844,11 @@ ul.hide-bullets > li {
     /* margin-top: 30px !important; */
     padding-left: 77px !important;
 }
+
+.__truckp {
+    margin-top: 45%;
+    font-size: 35px !important;
+  }
 
   .btn-custom3.arrow-btn3 {
     padding-right: 25px;
@@ -3632,6 +3663,14 @@ ul.hide-bullets > li {
 
 .__addrea {
     padding: 10px;
+}
+
+.__truckd {
+  padding: 12px;
+}
+
+.__truckp {
+    margin-top: 7%;
 }
 
 

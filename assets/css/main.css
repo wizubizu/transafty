@@ -1045,8 +1045,8 @@ i#closebtn {
    /* border-top: none ;
 }*/
 
-/*.table>thead>tr>th {
-    vertical-align: bottom;*/
+.table>thead>tr>th {
+    vertical-align: bottom;
     /* border-bottom: 2px solid #ddd; */
    /* border-bottom: none ;
 }*/
