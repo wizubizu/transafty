@@ -159,7 +159,7 @@
 								</select>
 							</div>
 							<div class="form-group">
-								<label for="" class="f1">Were you Referred ?(if yes enter email addresss of referre)</label>
+								<label for="" class="f1">Were you Referred ?(if yes enter email addresss or Phone Number of referre)</label>
 								<input type="email" class="form-control" name="" id="" placeholder="">
 							</div>
 
@@ -293,13 +293,21 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="" class="f1">City</label>
-										<input type="text" class="form-control" name="" id="" placeholder="">
+										<select name="" id="input" class="form-control">
+											<option value="">Select City</option>
+											<option value="">Nigeria</option>
+											<option value="">America</option>
+										</select>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="" class="f1">State of Residence</label>
-										<input type="text" class="form-control" name="" id="" placeholder="">
+										<select name="" id="input" class="form-control">
+											<option value="">Select State</option>
+											<option value="">Nigeria</option>
+											<option value="">America</option>
+										</select>
 									</div>
 								</div>
 							</div>
@@ -337,12 +345,20 @@
 
 							<div class="form-group">
 								<label for="" class="f1">Union Membership</label>
-								<select name="" id="input" class="form-control">
-									<option value=""> NARTO</option>
-									<option value="">Individual</option>
-									<option value="">Company</option>
+								<select name="dbType" id="dbType" class="form-control">
+									<option value=""> NARTO (Nigerian Association of Road Transport Owners</option>
+									<option value="">Allied Trucks Transporters Association ofNigeria (ATTAN)</option>
+									<option value="">Corporate Fleet Truck Owners Association (CFTOA)</option>
+									<option value="">Association of Maritime Trucks Owners (AMATO)</option>
+									<option value="other">Others (Please Specify)</option>
 								</select>
 							</div>
+
+							<div class="form-group" id="otherType" style="display:none;">
+								<label for="" class="f1">Others (Please Specify)</label>
+								<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Union Membership">
+							</div>
+
 							<div class="form-group">
 								<div class="checkbox">
 									<label>
@@ -359,7 +375,7 @@
 						        	</button>
 								</div>
 								<div class="col-md-6 col-sm-6 col-xs-6">
-									<button type="submit" class="sub_btn btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; " data-toggle="modal" href='#modal-id'>SUBMIT
+									<button type="submit" class="sub_btn btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; ">SUBMIT
 							        	<span class="arrow2"></span>
 							        </button>
 								</div>
@@ -456,6 +472,18 @@
     <script src="assets/js/bootstrap-datepicker.js"></script>
 
     <script type="text/javascript">
+
+    	// show and hide select 
+		$('#dbType').on('change',function(){
+		    if( $(this).val()==="other"){
+		    $("#otherType").show()
+		    }
+		    else{
+		    $("#otherType").hide()
+		    }
+		});
+
+
     	$(document).ready(function (){
     		$('.sub_btn').hide();
 			$("#continuebtn").click(function (){

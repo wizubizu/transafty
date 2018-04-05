@@ -16,8 +16,9 @@
 	<!-- CUSTOM STYLES -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
-	<link href="assets/css/bootstrap-datepicker.css" rel="stylesheet" /> 
-	 
+	<link rel="stylesheet" type="text/css" href="assets/css/switch.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/intro.css">
+	
 
 
 	<!-- WEBFONT -->
@@ -29,124 +30,226 @@
 <body class="">
 
 		
-	<section class="">
 
-		<div class="container">
+		<div class="section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-2">
+						<div class="leftbar">
+							<img src="assets/img/cross-out.svg" id="closebtn">
+							<!-- <i class="fa fa-times" id="closebtn"></i> -->
+							<div class="">
+								<div class="__dashlogoimg">
+									<a href=""><img src="assets/img/tralogo1.png" class=""></a>
+								</div>
+								<p class="" >
 
-			<div class="row">
-				<div class="col-md-2"></div>
-				<div class="col-md-8">
-					<div class="__truckd">
-
-						<div class="">
-							<a href="truck.html">
-								<img src="assets/img/right-arrow.svg"> &nbsp;
-								<span class="f3 __alltrack">Back to Truck</span>
-							</a>
-						</div>
-						<div class="row __timg">
-							<div class="col-md-7 col-sm-6">
-								<img src="assets/img/truckm.png" alt="Avatar" style="width:200px; height: 100px;" class="">
-								<p class="f3 __truimp">MAERSK 35</p>
-							</div>
-							<div class="col-md-5 col-sm-6">
-								<p class="f3 __truckp">
-									<span>2000</span> <span>Trips</span>
+									<a href="owner_dashboard.html">
+										<img src="assets/img/tover1.svg"><br>
+										OVERVIEW
+									</a>
+								</p>
+								<!-- <p class="" >
+									<a href="dashboard.html">
+										<img src="assets/img/tdash.svg"><br>
+										DASHBOARD
+									</a>
+								</p> -->
+								<!-- <p class="" >
+									<a href="inbox.html">
+										<img src="assets/img/tmsg.svg"><br>
+										INBOX
+									</a>
+								</p>
+								<p class="" >
+									<a href="delivery.html">
+										<img src="assets/img/ttruck.svg"><br>
+										DELIVERIES
+									</a>
+								</p> -->
+								<p class="" >
+									<a href="booking.html">
+										<img src="assets/img/t2.svg"><br>
+										BOOKINGS
+									</a>
+								</p>
+								<p class="" >
+									<a href="transation.html">
+										<img src="assets/img/t4.svg"><br>
+										TRANSACTIONS
+									</a>
+								</p>
+								<p class="activedashboard" >
+									<a href="truck.html">
+										<img src="assets/img/t4t.svg"><br>
+										TRUCKS
+									</a>
+								</p>
+								<p class="" >
+									<a href="settings">
+										<img src="assets/img/tsupport.svg"><br>
+										SETTINGS
+									</a>
+								</p>
+								<p class="" >
+									<a href="support.html">
+										<img src="assets/img/t10.svg"><br>
+										SUPPORT
+									</a>
 								</p>
 							</div>
 						</div>
-
-						<hr class="__rect4hr">
-
-						<div class="table-responsive">
-							<table class="table table-hover">
-								<thead>
-									<tr>
-										<th>Code</th>
-										<th>Date</th>
-										<th>From</th>
-										<th>To</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>#1000304</td>
-										<td>06/03/2018</td>
-										<td>Ibadan</td>
-										<td>Abuja</td>
-									</tr>
-
-									<tr>
-										<td>#1000304</td>
-										<td>06/03/2018</td>
-										<td>Lagos</td>
-										<td>PH</td>
-									</tr>
-
-									<tr>
-										<td>#1000304</td>
-										<td>06/03/2018</td>
-										<td>Lagos</td>
-										<td>Kano</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
 					</div>
+					
+					<div class="col-md-10 __dasmenmsg">
+						
+						<div class="row">
+							<div class="col-md-8 col-sm-8 col-xs-4">
+								<a href="#" class="navbar-brand __navbar-brand1" id="openSidebar"><i class=" fa fa-bars" onclick="openSidebar()" ></i></a>
 
-					<div class="row">
-						<div class="col-md-7 col-sm-5"></div>
-						<div class="col-md-5 col-sm-7 __paginationt">
-							<div class="pagination">
-							  	<a href="#" class="active">1</a>
-							  	<a href="#" class="">2</a>
-							  	<a href="#" class="next-pagination">NEXT</a>
+								<a class="navbar-brand __navbar-brand2" href=""><span><img src="assets/img/uimg.svg" alt="" class="logo"></span>&nbsp; &nbsp;<span>JOHNSON TRUCKS</span></a>
+							</div>
+						
+							<div class="col-md-4 col-sm-4 col-xs-8">
+								<ul class="dropdown __dashdropdown">
+									<a href="#" class="dropdown-toggle " data-toggle="dropdown"><img src="assets/img/avatar.png" class="img-circle __dashimg">&nbsp; &nbsp;&nbsp; &nbsp;<span>Abimbola</span>
+									</a>
+									<ul class="dropdown-menu __dropmenu">
+										<div class="text-center __switch">
+											Switch Agency
+										</div>
+										<li>
+											<a href="">
+											<img src="assets/img/avatar.png" class=" img-circle __dashimg">&nbsp; &nbsp; Agency 1</a>
+										</li>
+										<li>
+											<a href="">
+											<img src="assets/img/avatar.png" class=" img-circle __dashimg">&nbsp; &nbsp;Agency 2</a>
+										</li>
+									</ul>
+								</ul>
 							</div>
 						</div>
-					</div>
+						<div class="__dashmsg">
+							<p class="f3 __dashmsgp">Truck Detail</p>
+							<hr class="__dashhr">
+								<div class="__daspos">
+									<!-- <div class="__dasposs"> -->
+										<!-- <span class="__dassearc"><img src="assets/img/dasims.svg"></span>
+										<input type="search" name="" id="input" class="form-control __dasminp" value="" required="required" title="" placeholder="Search messages or name"> -->
+									<!-- </div> -->
+									<!-- <hr class="__dashhr"> -->
+									<div class="__traccard">
+
+										<div class="">
+											<a href="truck.html">
+												<img src="assets/img/right-arrow.svg"> &nbsp;
+												<span class="f3 __alltrack">Back to Truck</span>
+											</a>
+										</div>
+										<div class="row __timg">
+											<div class="col-md-4 col-sm-6">
+												<img src="assets/img/truckm.png" alt="Avatar" class="">
+											</div>
+											<div class="col-md-5 col-sm-3 __larg">
+												<p class="f3 __truimp">Truck Name</p>
+												<p class="__detaitp">MAERSK 35</p>
+
+												<p class="f3 __truimp">Vehicle Type</p>
+												<p class="__detaitp">SEMI-TRAILER</p>
+
+												<p class="f3 __truimp">Licence Plate Number</p>
+												<p class="__detaitp">LA-345-AAA</p>
+
+												<p class="f3 __truimp">Chasis Number</p>
+												<p class="__detaitp">3456123</p>
+											</div>
+											<div class="col-md-3 col-sm-3">
+												<p class="f3 __truckp">
+													<span>2000</span> <span>Trips</span>
+												</p>
+											</div>
+										</div>
+
+										<hr class="__rect4hr">
+
+										<div class="table-responsive">
+											<table class="table table-hover">
+												<thead>
+													<tr>
+														<th>Code</th>
+														<th>Date</th>
+														<th>From</th>
+														<th>To</th>
+														<th>Status</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td>#1000304</td>
+														<td>06/03/2018</td>
+														<td>Ibadan</td>
+														<td>Abuja</td>
+														<td>
+															<p>Pending</p>
+
+														</td>
+													</tr>
+
+													<tr>
+														<td>#1000304</td>
+														<td>06/03/2018</td>
+														<td>Lagos</td>
+														<td>PH</td>
+														<td>Active</td>
+													</tr>
+
+													<tr>
+														<td>#1000304</td>
+														<td>06/03/2018</td>
+														<td>Lagos</td>
+														<td>Kano</td>
+														<td>Completed</td>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										
+										<div class="row">
+											<div class="col-md-7 col-sm-7"></div>
+											<div class="col-md-5 col-sm-5 __paginationt">
+												<div class="pagination">
+												  	<a href="#" class="active">1</a>
+												  	<a href="#" class="">2</a>
+												  	<a href="#" class=" ">3</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>			
 				</div>
-				<div class="col-md-2"></div>
 			</div>
-
-			
-			
-
-			
 		</div>
-	</section>
 
-	<footer class="__footer">
-		
-		<div class="container __footrow">
-			<div class="row">
-				<div class=" col-md-5 col-sm-5 f1 __footcol">
-					<p class="__footp">Transafty is NIgeria’s premium truck booking platform for connecting individuals and companies looking for haulage services and construction equipment with top-quality, verified logistics service professionals</p> 
-				</div>
-				<div class=" col-md-3 col-sm-3 f1 __footcol">
-					<p><a href="about.html">About Us</a></p>
-					<p><a href="">How it works</a></p>
-					<p><a href="">Helplines</a></p>
-					<p><a href="faq.html">FAQs</a></p>
-				</div>
-				<div class=" col-md-3 col-sm-3 f1 __footcol">
-					<p><a href="">Teams and Conditions</a></p>
-					<p><a href="privacy.html">Privacy Policy</a></p>
-				</div>
-				<div class=" col-md-1 col-sm-1 f1 __footcol">
-					<p><a href=""><img src="assets/img/linkedin.svg"></a></p>
-					<p><a href=""><img src="assets/img/facebook-logo.svg" class="__footimg"></a></p>
-					<p><a href=""><img src="assets/img/twitte-logo.svg" class="__footimg"></a></p>
-				</div>
-			</div>
-		</div>
-		<hr>
-		<div class="container">
-			<p class="f1 __footcol">Copyright 2017 - Transafty Delivery Services . All rights reserved.</p>
-		</div>
-	</footer>
+
 	
+
+
 	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
 
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/intro.js"></script>
+    </script>
 </body>
+
+	<script type="text/javascript">
+  		$('#openSidebar').click(function(){
+			$('.leftbar').addClass('biger');
+		});
+		$('#closebtn').click(function(){
+			$('.leftbar').removeClass('biger');
+		});
+    </script>
 </html>
