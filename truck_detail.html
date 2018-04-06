@@ -133,100 +133,112 @@
 						<div class="__dashmsg">
 							<p class="f3 __dashmsgp">Truck Detail</p>
 							<hr class="__dashhr">
-								<div class="__daspos">
-									<!-- <div class="__dasposs"> -->
-										<!-- <span class="__dassearc"><img src="assets/img/dasims.svg"></span>
-										<input type="search" name="" id="input" class="form-control __dasminp" value="" required="required" title="" placeholder="Search messages or name"> -->
-									<!-- </div> -->
-									<!-- <hr class="__dashhr"> -->
-									<div class="__traccard">
+							<div class="__daspos">
+								<!-- <div class="__dasposs"> -->
+									<!-- <span class="__dassearc"><img src="assets/img/dasims.svg"></span>
+									<input type="search" name="" id="input" class="form-control __dasminp" value="" required="required" title="" placeholder="Search messages or name"> -->
+								<!-- </div> -->
+								<!-- <hr class="__dashhr"> -->
+								<div class="__traccard">
 
-										<div class="">
-											<a href="truck.html">
-												<img src="assets/img/right-arrow.svg"> &nbsp;
-												<span class="f3 __alltrack">Back to Truck</span>
-											</a>
+									<div class="">
+										<a href="truck.html">
+											<img src="assets/img/right-arrow.svg"> &nbsp;
+											<span class="f3 __alltrack">Back to Truck</span>
+										</a>
+									</div>
+									<div class="row __timg">
+										<div class="col-md-4 col-sm-6">
+											<img src="assets/img/truckm.png" alt="Avatar" class="">
 										</div>
-										<div class="row __timg">
-											<div class="col-md-4 col-sm-6">
-												<img src="assets/img/truckm.png" alt="Avatar" class="">
-											</div>
-											<div class="col-md-5 col-sm-3 __larg">
-												<p class="f3 __truimp">Truck Name</p>
-												<p class="__detaitp">MAERSK 35</p>
+										<div class="col-md-5 col-sm-3 __larg">
+											<p class="f3 __truimp">Truck Name</p>
+											<p class="__detaitp">MAERSK 35</p>
 
-												<p class="f3 __truimp">Vehicle Type</p>
-												<p class="__detaitp">SEMI-TRAILER</p>
+											<p class="f3 __truimp">Vehicle Type</p>
+											<p class="__detaitp">SEMI-TRAILER</p>
 
-												<p class="f3 __truimp">Licence Plate Number</p>
-												<p class="__detaitp">LA-345-AAA</p>
+											<p class="f3 __truimp">Licence Plate Number</p>
+											<p class="__detaitp">LA-345-AAA</p>
 
-												<p class="f3 __truimp">Chasis Number</p>
-												<p class="__detaitp">3456123</p>
-											</div>
-											<div class="col-md-3 col-sm-3">
-												<p class="f3 __truckp">
-													<span>2000</span> <span>Trips</span>
-												</p>
-											</div>
+											<p class="f3 __truimp">Chasis Number</p>
+											<p class="__detaitp">3456123</p>
 										</div>
-
-										<hr class="__rect4hr">
-
-										<div class="table-responsive">
-											<table class="table table-hover">
-												<thead>
-													<tr>
-														<th>Code</th>
-														<th>Date</th>
-														<th>From</th>
-														<th>To</th>
-														<th>Status</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>#1000304</td>
-														<td>06/03/2018</td>
-														<td>Ibadan</td>
-														<td>Abuja</td>
-														<td>
-															<p>Pending</p>
-
-														</td>
-													</tr>
-
-													<tr>
-														<td>#1000304</td>
-														<td>06/03/2018</td>
-														<td>Lagos</td>
-														<td>PH</td>
-														<td>Active</td>
-													</tr>
-
-													<tr>
-														<td>#1000304</td>
-														<td>06/03/2018</td>
-														<td>Lagos</td>
-														<td>Kano</td>
-														<td>Completed</td>
-													</tr>
-												</tbody>
-											</table>
-										</div>
-										
-										<div class="row">
-											<div class="col-md-7 col-sm-7"></div>
-											<div class="col-md-5 col-sm-5 __paginationt">
-												<div class="pagination">
-												  	<a href="#" class="active">1</a>
-												  	<a href="#" class="">2</a>
-												  	<a href="#" class=" ">3</a>
+										<div class="col-md-3 col-sm-3">
+											<div class="__fright">
+												<img id="imageToSwap" class="__profile" src="assets/img/ta.svg">
+												<br><br>
+												<div class="form-group">
+													<select onchange="$('#imageToSwap').attr('src', this.options[this.selectedIndex].value);">
+													    <!-- <option value="assets/img/status.jpg" class="__dasimt" selected>Select</option> -->
+													    <option value="assets/img/ta.svg" class="__dasimt" selected>Available</option>
+													    <option value="assets/img/tb.svg" class="__dasimt">Booked</option>
+													    <option value="assets/img/tu.svg" class="__dasimt">Under maintenace</option>
+													</select>
 												</div>
+											</div>
+											<p class="f3 __truckp">
+												<span>2000</span> <span>Trips</span>
+											</p>
+										</div>
+									</div>
+
+									<hr class="__rect4hr">
+
+									<div class="table-responsive">
+										<table class="table table-hover">
+											<thead>
+												<tr>
+													<th>Code</th>
+													<th>Date</th>
+													<th>From</th>
+													<th>To</th>
+													<th>Status</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>#1000304</td>
+													<td>06/03/2018</td>
+													<td>Ibadan</td>
+													<td>Abuja</td>
+													<td>
+														<p>Pending</p>
+
+													</td>
+												</tr>
+
+												<tr>
+													<td>#1000304</td>
+													<td>06/03/2018</td>
+													<td>Lagos</td>
+													<td>PH</td>
+													<td>Active</td>
+												</tr>
+
+												<tr>
+													<td>#1000304</td>
+													<td>06/03/2018</td>
+													<td>Lagos</td>
+													<td>Kano</td>
+													<td>Completed</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									
+									<div class="row">
+										<div class="col-md-7 col-sm-7"></div>
+										<div class="col-md-5 col-sm-5 __paginationt">
+											<div class="pagination">
+											  	<a href="#" class="active">1</a>
+											  	<a href="#" class="">2</a>
+											  	<a href="#" class=" ">3</a>
 											</div>
 										</div>
 									</div>
 								</div>
+							</div>
 						</div>
 					</div>			
 				</div>

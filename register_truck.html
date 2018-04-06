@@ -16,6 +16,7 @@
 	<!-- CUSTOM STYLES -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
 	<link href="assets/css/bootstrap-datepicker.css" rel="stylesheet" /> 
 	 
 
@@ -226,21 +227,13 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="" class="f1">City</label>
-										<select name="" id="input" class="form-control">
-											<option value="">Select City</option>
-											<option value="">Nigeria</option>
-											<option value="">America</option>
-										</select>
+										<input type="text" class="form-control" name="" id="" placeholder="">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="" class="f1">State of Residence</label>
-										<select name="" id="input" class="form-control">
-											<option value="">Select State</option>
-											<option value="">Nigeria</option>
-											<option value="">America</option>
-										</select>
+										<input type="text" class="form-control" name="" id="" placeholder="">
 									</div>
 								</div>
 							</div>
@@ -293,21 +286,13 @@
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="" class="f1">City</label>
-										<select name="" id="input" class="form-control">
-											<option value="">Select City</option>
-											<option value="">Nigeria</option>
-											<option value="">America</option>
-										</select>
+										<input type="text" class="form-control" name="" id="" placeholder="">
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="form-group">
 										<label for="" class="f1">State of Residence</label>
-										<select name="" id="input" class="form-control">
-											<option value="">Select State</option>
-											<option value="">Nigeria</option>
-											<option value="">America</option>
-										</select>
+										<input type="text" class="form-control" name="" id="" placeholder="">
 									</div>
 								</div>
 							</div>
@@ -360,13 +345,22 @@
 							</div>
 
 							<div class="form-group">
+								<div class="">
+									<input class="__renttruk" type="checkbox" id="check3">
+									<label for="check3" class="">
+										I agree to the Terms and Condition.
+									</label>
+								</div>
+							</div>
+
+							<!-- <div class="form-group">
 								<div class="checkbox">
 									<label>
 										<input type="checkbox" value="" id="check_Box1">
 										I agree to the Terms and Condition.
 									</label>
 								</div>
-							</div>
+							</div> -->
 
 							<div class="row">
 								<div class="col-md-6 col-sm-6 col-xs-6">
@@ -508,13 +502,21 @@
 			});
 
 
-			$("#check_Box1").click(function (){
-				if($("#check_Box1").is(":checked")){
-				$('.sub_btn').toggle();
-			}else{
-				$('.sub_btn').toggle();
-			}
-		});
+			// 	$("#check_Box1").click(function (){
+			// 		if($("#check_Box1").is(":checked")){
+			// 		$('.sub_btn').toggle();
+			// 	}else{
+			// 		$('.sub_btn').toggle();
+			// 	}
+			// });
+
+				$("#check3").click(function (){
+					if($("#check3").is(":checked")){
+					$('.sub_btn').toggle();
+				}else{
+					$('.sub_btn').toggle();
+				}
+			});
 			
 		});
     </script>
