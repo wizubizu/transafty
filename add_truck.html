@@ -154,7 +154,7 @@
 												
 												<div class="form-group">
 													<label for="" class="f1">Truck Type</label>
-													<div class="dropdown-sin-1" >
+													<!-- <div class="dropdown-sin-1" >
 												        <select style="display:none"  placeholder="Select">
 												            <option value="1">select</option>
 												            <option value="2">HEAVY/LIGHT DUTY TRUCKS & VANS </option>
@@ -196,7 +196,47 @@
 												            <option value="37">Dumpers</option>
 												            <option value="38">Backhoes</option>
 												        </select>
-												    </div>
+												    </div> -->
+												    <select name="dbType" id="dbType" class="form-control">
+														<option value="">Select</option>
+														<option value="">Lowbed semi-trailer</option>
+														<option value="">Towing trucks/road wrecker</option>
+														<option value="">Sewage trucks (faecal suction trucks)</option>
+														<option value="">Refrigerator truck (reefers)</option>
+														<option value="">Dry Van(Enclosed Cargo) Truck</option>
+														<option value="">40ft container (flatbed) semi-trailer</option>
+														<option value="">20ft container (flatbed) semi-trailer</option>
+														<option value="">Cargo (flatbed) semi-trailer</option>
+														<option value="">Cranes (Truck Mounted)</option>
+														<option value="">Car transporters (car hauler/car carrying semitrailer)</option>
+														<option value="">Cargo vans</option>
+														<option value="">Tipper/dump truck</option>
+														<option value="">Pickup trucks</option>
+														<option value="">Box truck</option>
+														<option value="">Stake bed semi-trailer long body (cargo truck)</option>
+														<option value="">Stake bed semi-trailer short body (light cargo truck)</option>
+														<option value="">Side walled semi-trailer truck</option>
+														<option value="">Excavator</option>
+														<option value="">Wheel loader</option>
+														<option value="">Bulldozer</option>
+														<option value="">Road roller</option>
+														<option value="">Motor grader</option>
+														<option value="">Asphalt spreader</option>
+														<option value="">Forklift</option>
+														<option value="">Concrete mixer</option>
+														<option value="">Crushers</option>
+														<option value="">Compactors</option>
+														<option value="">Offload trucks</option>
+														<option value="">Pay loader</option>
+														<option value="">Dumpers</option>
+														<option value="">Backhoes</option>
+														<option value="other">Others (Please Specify)</option>
+													</select>
+												</div>
+
+												<div class="form-group" id="otherType" style="display:none;">
+													<label for="" class="f1">Others (Please Specify)</label>
+													<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Truck Type">
 												</div>
 
 												<div class="form-group">
@@ -391,14 +431,14 @@
 
 <script type="text/javascript">
 
-// $('#dbType').on('change',function(){
-//     if( $(this).val()==="other"){
-//     $("#otherType").show()
-//     }
-//     else{
-//     $("#otherType").hide()
-//     }
-// });
+$('#dbType').on('change',function(){
+    if( $(this).val()==="other"){
+    $("#otherType").show();
+    }
+    else{
+    $("#otherType").hide()
+    }
+});
 
 
 // show and hide select 

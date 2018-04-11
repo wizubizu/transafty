@@ -117,7 +117,8 @@
 							</div>
 							<div class="form-group">
 								<label for="" class="f1">Phone number</label>
-								<input type="number" class="form-control f1" name="" id="" placeholder="+234">
+								<input type="text" class="form-control f1" name="quantity" id="quantity" placeholder="+234"/><span id="errmsg"></span>
+								<!-- <input type="number" class="form-control f1" name="" id="" placeholder="+234"> -->
 							</div>
 							<div class="form-group">
 								<label for="" class="f1">Email address</label>
@@ -266,7 +267,7 @@
 								<input type="text" class="form-control" name="" id="" placeholder="e.g D.R. MATT INT'L SERV. LTD.">
 							</div>
 							<div class="form-group">
-								<label for="" class="f1">Trading name (optional?)</label>
+								<label for="" class="f1">Trading Name (Optional)</label>
 								<input type="text" class="form-control" name="" id="" placeholder="Transafty-Trading name for D.R. MATT...">
 							</div>
 							<div class="form-group">
@@ -274,7 +275,7 @@
 								<input type="text" class="form-control" name="" id="" placeholder="e.g CEO, General Manager, Marketing Manager ,Others">
 							</div>
 							<div class="form-group">
-								<label for="" class="f1">CAC Registration number (RC Number)</label>
+								<label for="" class="f1">CAC Registration Number (RC Number)</label>
 								<input type="text" class="form-control" name="" id="" placeholder="">
 							</div>
 							
@@ -466,6 +467,24 @@
     <script src="assets/js/bootstrap-datepicker.js"></script>
 
     <script type="text/javascript">
+
+
+
+    	// only number alone
+
+    	$(document).ready(function () {
+		  //called when key is pressed in textbox
+		  $("#quantity").keypress(function (e) {
+		     //if the letter is not digit then display error and don't type anything
+		     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+		        //display error message
+		        $("#errmsg").html("Numbers Only").show().fadeOut("slow");
+		               return false;
+		    }
+		   });
+		});
+
+
 
     	// show and hide select 
 		$('#dbType').on('change',function(){

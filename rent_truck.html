@@ -116,7 +116,8 @@
 						</div>
 						<div class="form-group">
 							<label for="" class="f1">phone number</label>
-							<input type="text" class="form-control  f1" id="" placeholder="+234">
+							<input type="text" class="form-control f1" name="quantity" id="quantity" placeholder="+234" /><span id="errmsg"></span>
+							<!-- <input type="text" class="form-control  f1" id="" placeholder="+234"> -->
 						</div>
 						<div class="form-group">
 							<label for="" class="f1">email address</label>
@@ -209,6 +210,20 @@
 
 	
 	<script type="text/javascript">
+
+		// only number alone
+
+    	$(document).ready(function () {
+		  //called when key is pressed in textbox
+		  $("#quantity").keypress(function (e) {
+		     //if the letter is not digit then display error and don't type anything
+		     if (e.which != 8 && e.which != 0 && (e.which < 48 || e.which > 57)) {
+		        //display error message
+		        $("#errmsg").html("Numbers Only").show().fadeOut("slow");
+		               return false;
+		    }
+		   });
+		});
 
 	 // change navbar background color when scroll downs
 
