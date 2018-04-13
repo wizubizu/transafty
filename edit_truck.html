@@ -16,6 +16,7 @@
 	<!-- CUSTOM STYLES -->
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/jquery.dropdown.css"> 
 	
 
@@ -135,280 +136,318 @@
 							<hr class="__dashhr">
 							<div class="__addrea">
 								<div class="row">
-									<div class="col-md-2 col-sm-2"></div>
-									<div class="col-md-8 col-sm-8">
-										<form action="" method="POST" role="form" class="">
-											<!-- <div class="" id="First-Div"> -->
-												<!-- <div class="form-group">
-													<label for="" class="f1">Status</label>
-													<select name="" id="input" class="form-control">
-														<option value="">Avaliable</option>
-														<option value="">Not Avaliable</option>
-													</select>
-												</div> -->
+									<div class="col-md-1 col-sm-1"></div>
+									<div class="col-md-10 col-sm-10">
+										<div class="row">
+											<div class="col-md-6 col-sm-6">
+												<form action="" method="POST" role="form" class="">
+														<div class="form-group">
+															<label for="" class="f1">Truck Type</label>
+															<!-- <div class="dropdown-sin-1" >
+														        <select style="display:none"  placeholder="Select">
+														            <option value="1">select</option>
+														            <option value="2">HEAVY/LIGHT DUTY TRUCKS & VANS </option>
+														            <option value="3">SEMI-TRAILER</option>
+														            <option value="4">TOWING TRUCKS/ROAD WRECKER</option>
+														            <option value="5">SEWAGE TRUCKS (FAECAL SUCTION TRUCKS)</option>
+														            <option value="6">MOVERS & PACKERS</option>
+														            <option value="7">CONSTRUCTION MACHINERY</option>
+														            <option value="8">40ft container (flatbed) semi-trailer</option>
+														            <option value="9">20ft container (flatbed) semi-trailer</option>
+														            <option value="10">Cargo (flatbed) semi-trailer</option>
+														            <option value="11">Cranes (Truck Mounted)</option>
+														            <option value="12">Car transporters (car hauler/car carrying semitrailer)</option>
+														            <option value="13">Lowbed semi-trailer</option>
+														            <option value="14">Towing trucks/road wrecker</option>
+														            <option value="15">Sewage trucks (faecal suction trucks)</option>
+														            <option value="16">Cargo vans</option>
+														            <option value="17">Refrigerator truck (reefers)</option>
+														            <option value="18">Dry Van(Enclosed Cargo) Truck</option>
+														            <option value="19">Tipper/dump truck</option>
+														            <option value="20">Pickup trucks</option>
+														            <option value="21">Box truck</option>
+														            <option value="22">Stake bed semi-trailer long body (cargo truck)</option>
+														            <option value="23">Stake bed semi-trailer short body (light cargo truck)</option>
+														            <option value="24">Side walled semi-trailer truck</option>
+														            <option value="24">Wheel loader</option>
+														            <option value="25">Excavator</option>
+														            <option value="26">Bulldozer</option>
+														            <option value="27">Road roller</option>
+														            <option value="28">Motor grader</option>
+														            <option value="29">Asphalt spreader</option>
+														            <option value="30">Asphalt distributor</option>
+														            <option value="31">Forklift</option>
+														            <option value="32">Concrete mixer</option>
+														            <option value="33">Crushers</option>
+														            <option value="34">Compactors</option>
+														            <option value="35">Offload trucks</option>
+														            <option value="36">Pay loader</option>
+														            <option value="37">Dumpers</option>
+														            <option value="38">Backhoes</option>
+														        </select>
+														    </div> -->
+														    <select name="dbType" id="dbType1" class="form-control">
+																<option value="">Select</option>
+																<option value="">Lowbed semi-trailer</option>
+																<option value="">Towing trucks/road wrecker</option>
+																<option value="">Sewage trucks (faecal suction trucks)</option>
+																<option value="">Refrigerator truck (reefers)</option>
+																<option value="">Dry Van(Enclosed Cargo) Truck</option>
+																<option value="">40ft container (flatbed) semi-trailer</option>
+																<option value="">20ft container (flatbed) semi-trailer</option>
+																<option value="">Cargo (flatbed) semi-trailer</option>
+																<option value="">Cranes (Truck Mounted)</option>
+																<option value="">Car transporters (car hauler/car carrying semitrailer)</option>
+																<option value="">Cargo vans</option>
+																<option value="">Tipper/dump truck</option>
+																<option value="">Pickup trucks</option>
+																<option value="">Box truck</option>
+																<option value="">Stake bed semi-trailer long body (cargo truck)</option>
+																<option value="">Stake bed semi-trailer short body (light cargo truck)</option>
+																<option value="">Side walled semi-trailer truck</option>
+																<option value="">Excavator</option>
+																<option value="">Wheel loader</option>
+																<option value="">Bulldozer</option>
+																<option value="">Road roller</option>
+																<option value="">Motor grader</option>
+																<option value="">Asphalt spreader</option>
+																<option value="">Forklift</option>
+																<option value="">Concrete mixer</option>
+																<option value="">Crushers</option>
+																<option value="">Compactors</option>
+																<option value="">Offload trucks</option>
+																<option value="">Pay loader</option>
+																<option value="">Dumpers</option>
+																<option value="">Backhoes</option>
+																<option value="other">Others (Please Specify)</option>
+															</select>
+														</div>
 
-												<div class="form-group">
-													<label for="" class="f1">Truck Image(s) you can select multiple images</label>
-													<input type="file" class="form-control" id="files" name="files[]" multiple>
-												</div>
-												
-												<div class="form-group">
-													<label for="" class="f1">Truck Type</label>
-													<!-- <div class="dropdown-sin-1" >
-												        <select style="display:none"  placeholder="Select">
-												            <option value="1">select</option>
-												            <option value="2">HEAVY/LIGHT DUTY TRUCKS & VANS </option>
-												            <option value="3">SEMI-TRAILER</option>
-												            <option value="4">TOWING TRUCKS/ROAD WRECKER</option>
-												            <option value="5">SEWAGE TRUCKS (FAECAL SUCTION TRUCKS)</option>
-												            <option value="6">MOVERS & PACKERS</option>
-												            <option value="7">CONSTRUCTION MACHINERY</option>
-												            <option value="8">40ft container (flatbed) semi-trailer</option>
-												            <option value="9">20ft container (flatbed) semi-trailer</option>
-												            <option value="10">Cargo (flatbed) semi-trailer</option>
-												            <option value="11">Cranes (Truck Mounted)</option>
-												            <option value="12">Car transporters (car hauler/car carrying semitrailer)</option>
-												            <option value="13">Lowbed semi-trailer</option>
-												            <option value="14">Towing trucks/road wrecker</option>
-												            <option value="15">Sewage trucks (faecal suction trucks)</option>
-												            <option value="16">Cargo vans</option>
-												            <option value="17">Refrigerator truck (reefers)</option>
-												            <option value="18">Dry Van(Enclosed Cargo) Truck</option>
-												            <option value="19">Tipper/dump truck</option>
-												            <option value="20">Pickup trucks</option>
-												            <option value="21">Box truck</option>
-												            <option value="22">Stake bed semi-trailer long body (cargo truck)</option>
-												            <option value="23">Stake bed semi-trailer short body (light cargo truck)</option>
-												            <option value="24">Side walled semi-trailer truck</option>
-												            <option value="24">Wheel loader</option>
-												            <option value="25">Excavator</option>
-												            <option value="26">Bulldozer</option>
-												            <option value="27">Road roller</option>
-												            <option value="28">Motor grader</option>
-												            <option value="29">Asphalt spreader</option>
-												            <option value="30">Asphalt distributor</option>
-												            <option value="31">Forklift</option>
-												            <option value="32">Concrete mixer</option>
-												            <option value="33">Crushers</option>
-												            <option value="34">Compactors</option>
-												            <option value="35">Offload trucks</option>
-												            <option value="36">Pay loader</option>
-												            <option value="37">Dumpers</option>
-												            <option value="38">Backhoes</option>
-												        </select>
-												    </div> -->
-												    <select name="dbType" id="dbType" class="form-control">
-														<option value="">Select</option>
-														<option value="">Lowbed semi-trailer</option>
-														<option value="">Towing trucks/road wrecker</option>
-														<option value="">Sewage trucks (faecal suction trucks)</option>
-														<option value="">Refrigerator truck (reefers)</option>
-														<option value="">Dry Van(Enclosed Cargo) Truck</option>
-														<option value="">40ft container (flatbed) semi-trailer</option>
-														<option value="">20ft container (flatbed) semi-trailer</option>
-														<option value="">Cargo (flatbed) semi-trailer</option>
-														<option value="">Cranes (Truck Mounted)</option>
-														<option value="">Car transporters (car hauler/car carrying semitrailer)</option>
-														<option value="">Cargo vans</option>
-														<option value="">Tipper/dump truck</option>
-														<option value="">Pickup trucks</option>
-														<option value="">Box truck</option>
-														<option value="">Stake bed semi-trailer long body (cargo truck)</option>
-														<option value="">Stake bed semi-trailer short body (light cargo truck)</option>
-														<option value="">Side walled semi-trailer truck</option>
-														<option value="">Excavator</option>
-														<option value="">Wheel loader</option>
-														<option value="">Bulldozer</option>
-														<option value="">Road roller</option>
-														<option value="">Motor grader</option>
-														<option value="">Asphalt spreader</option>
-														<option value="">Forklift</option>
-														<option value="">Concrete mixer</option>
-														<option value="">Crushers</option>
-														<option value="">Compactors</option>
-														<option value="">Offload trucks</option>
-														<option value="">Pay loader</option>
-														<option value="">Dumpers</option>
-														<option value="">Backhoes</option>
-														<option value="other">Others (Please Specify)</option>
-													</select>
-												</div>
+														<div class="form-group" id="otherType1" style="display:none;">
+															<label for="" class="f1">Others (Please Specify)</label>
+															<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Truck Type">
+														</div>
 
-												<div class="form-group" id="otherType" style="display:none;">
-													<label for="" class="f1">Others (Please Specify)</label>
-													<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Truck Type">
-												</div>
+														<div class="form-group">
+															<label for="" class="f1">License Plate Number</label>
+															<input type="text" class="form-control" name="" id="" placeholder="">
+														</div>
 
-												<div class="form-group">
-													<label for="" class="f1">License Plate Number</label>
-													<input type="text" class="form-control" name="" id="" placeholder="">
-												</div>
-
-												
-												
-
-												<!-- <div class="row">
-													<div class="col-md-8 col-sm-8"></div>
-													<div class="col-md-4 col-sm-4">
-														<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm()">NEXT
-												        	<span class="arrow2"></span>
-												    	</button>
-													</div>
-												</div> -->
-											<!-- </div> -->	
-												
-											
-
-											<!-- 2 -->
-											<!-- <div class="" id="Second-Div" style="display: none;"> -->
-												<div class="form-group">
-													<label for="" class="f1">Vehicle Color</label>
-													<input type="text" class="form-control" name="" id="" placeholder="">
-												</div>
-
-												<div class="form-group">
-													<label for="" class="f1">Vehicle Model</label>
-													<input type="text" class="form-control" name="" id="" placeholder="">
-												</div>
-
-												<div class="form-group">
-													<label for="" class="f1">Chasis Number</label>
-													<input type="text" class="form-control" name="" id="" placeholder="">
-												</div>
-
-												<div class="form-group">
-													<label for="" class="f1">Basic Description</label>
-													<textarea name="" id="input" class="form-control" rows="3"></textarea>
-												</div>
-
-												
-												
-
-												<!-- <div class="row">
-													<div class="col-md-8 col-xs-6 col-sm-8">
-														<button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm()">
-											        		<span class="arrow3"></span>PREV
-											        	</button>
 														
-													</div>
-													<div class="col-md-4 col-sm-4 col-xs-6">
-														<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm1()">NEXT
-												        	<span class="arrow2"></span>
-												    	</button>
-													</div>
-												</div>
-											</div> -->
+														
+
+														<!-- <div class="row">
+															<div class="col-md-8 col-sm-8"></div>
+															<div class="col-md-4 col-sm-4">
+																<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm()">NEXT
+														        	<span class="arrow2"></span>
+														    	</button>
+															</div>
+														</div> -->
+													<!-- </div> -->	
+														
+													
+
+													<!-- 2 -->
+													<!-- <div class="" id="Second-Div" style="display: none;"> -->
+														<div class="form-group">
+															<label for="" class="f1">Vehicle Color</label>
+															<input type="text" class="form-control" name="" id="" placeholder="">
+														</div>
+
+														<div class="form-group">
+															<label for="" class="f1">Vehicle Model</label>
+															<input type="text" class="form-control" name="" id="" placeholder="">
+														</div>
+
+														<div class="form-group">
+															<label for="" class="f1">Chasis Number</label>
+															<input type="text" class="form-control" name="" id="" placeholder="">
+														</div>
+
+														<div class="form-group">
+															<label for="" class="f1">Basic Description</label>
+															<textarea name="" id="input" class="form-control" rows="3"></textarea>
+														</div>
+
+														
+														
+
+														<!-- <div class="row">
+															<div class="col-md-8 col-xs-6 col-sm-8">
+																<button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm()">
+													        		<span class="arrow3"></span>PREV
+													        	</button>
+																
+															</div>
+															<div class="col-md-4 col-sm-4 col-xs-6">
+																<button type="button" class="btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showNextForm1()">NEXT
+														        	<span class="arrow2"></span>
+														    	</button>
+															</div>
+														</div>
+													</div> -->
 
 
-											<!-- 3 individual -->
-											<!-- <div class="" id="Third-Div" style="display: none;"> -->
-												<div class="form-group">
-													<label for="" class="f1">Location (Truck current location)</label>
-													<div class="dropdown-sin-1">
-												        <select style="display:none"  placeholder="Select">
-												            <option value="1">select</option>
-												            <option value="2">2</option>
-												            <option value="3">3</option>
-												            <option value="4">4</option>
-												            <option value="5">5</option>
-												            <option value="6">6</option>
-												            <option value="7">7</option>
-												            <option value="8">8</option>
-												            <option value="9">9</option>
-												            <option value="10">10</option>
-												            <option value="11">11</option>
-												            <option value="12">12</option>
-												        </select>
-												    </div>
-												</div>
+													<!-- 3 individual -->
+													<!-- <div class="" id="Third-Div" style="display: none;"> -->
+														<div class="form-group">
+															<label for="" class="f1">Location (Truck current location)</label>
+															<div class="dropdown-sin-1">
+														        <select style="display:none"  placeholder="Select">
+														            <option value="1">select</option>
+														            <option value="2">2</option>
+														            <option value="3">3</option>
+														            <option value="4">4</option>
+														            <option value="5">5</option>
+														            <option value="6">6</option>
+														            <option value="7">7</option>
+														            <option value="8">8</option>
+														            <option value="9">9</option>
+														            <option value="10">10</option>
+														            <option value="11">11</option>
+														            <option value="12">12</option>
+														        </select>
+														    </div>
+														</div>
 
-												<div class="form-group">
-													<label for="" class="f1">Destination ( Where your Truck can reach)</label>
-													<div class="dropdown-mul-2">
-	        											<select style="display:none"  name="" id="mul-2" multiple placeholder="Select">
-												            <option value="1">select</option>
-												            <option value="2">2</option>
-												            <option value="3">3</option>
-												            <option value="4">4</option>
-												            <option value="5">5</option>
-												            <option value="6">6</option>
-												            <option value="7">7</option>
-												            <option value="8">8</option>
-												            <option value="9">9</option>
-												            <option value="10">10</option>
-												            <option value="11">11</option>
-												            <option value="12">12</option>
-												        </select>
-												    </div>
-												</div>
+														<div class="form-group">
+															<label for="" class="f1">Destination ( Where your Truck can reach)</label>
+															<div class="dropdown-mul-2">
+			        											<select style="display:none"  name="" id="mul-2" multiple placeholder="Select">
+														            <option value="1">select</option>
+														            <option value="2">2</option>
+														            <option value="3">3</option>
+														            <option value="4">4</option>
+														            <option value="5">5</option>
+														            <option value="6">6</option>
+														            <option value="7">7</option>
+														            <option value="8">8</option>
+														            <option value="9">9</option>
+														            <option value="10">10</option>
+														            <option value="11">11</option>
+														            <option value="12">12</option>
+														        </select>
+														    </div>
+														</div>
 
-												<div class="form-group">
-													<label for="" class="f1">Freight Type</label>
-													<select name="dbType" id="dbType" class="form-control">
-											            <option value="1">select</option>
-											            <option value="2">Dry Cargo</option>
-											            <option value="3">Wet Cargo</option>
-											            <option value="4">Containerized Cargo</option>
-											            <option value="other">Others (Please Specify)</option>
-											       </select>
-											    </div>
-												<div class="form-group" id="otherType" style="display:none;">
-													<label for="" class="f1">Others (Please Specify)</label>
-													<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Freight Type">
-												</div>
+														<div class="form-group">
+															<label for="" class="f1">Freight Type</label>
+															<select name="dbType" id="dbType" class="form-control">
+													            <option value="1">select</option>
+													            <option value="2">Dry Cargo</option>
+													            <option value="3">Wet Cargo</option>
+													            <option value="4">Containerized Cargo</option>
+													            <option value="other">Others (Please Specify)</option>
+													       </select>
+													    </div>
+														<div class="form-group" id="otherType" style="display:none;">
+															<label for="" class="f1">Others (Please Specify)</label>
+															<input type="text" class="form-control" name="" id="" placeholder="Others (Please Specify) Freight Type">
+														</div>
 
-												
+														
 
-												<div class="form-group">
-													<label for="" class="f1">Delivery Type</label>
-													<!-- <input type="text" class="form-control" name="" id="" placeholder=""> -->
-													<!-- <select name="" id="" class="form-control">
-														<option value="">Select</option>
-														<option value="">Local/Intra-City</option>
-														<option value="">Inter-City</option>
-														<option value="">Cross-Border</option>
-													</select> -->
-													<div class="dropdown-mul-2">
-														<select style="display:none"  name="" id="mul-2" multiple placeholder="Select">
-												          	<option value="1" selected>Select</option>
-												         	<option value="local">Local/Intra-City</option>
-												          	<option value="inter_city">Inter-City</option>
-												          	<option value="cross">Cross-Border</option>
-												        </select>
-												    </div>
-												</div>
+														<div class="form-group">
+															<label for="" class="f1">Delivery Type</label>
+															<!-- <input type="text" class="form-control" name="" id="" placeholder=""> -->
+															<!-- <select name="" id="" class="form-control">
+																<option value="">Select</option>
+																<option value="">Local/Intra-City</option>
+																<option value="">Inter-City</option>
+																<option value="">Cross-Border</option>
+															</select> -->
+															<div class="dropdown-mul-2">
+																<select style="display:none"  name="" id="mul-2" multiple placeholder="Select">
+														          	<option value="1" selected>Select</option>
+														         	<option value="local">Local/Intra-City</option>
+														          	<option value="inter_city">Inter-City</option>
+														          	<option value="cross">Cross-Border</option>
+														        </select>
+														    </div>
+														</div>
 
-												<div class="row">
-													<div class="col-md-8 col-sm-8 col-xs-6">
-														<!-- <button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm1()">
-											        		<span class="arrow3"></span>PREV
-											        	</button> -->
-													</div>
-													<div class="col-md-4 col-sm-4 col-xs-6">
-														<button type="submit" class=" btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addsubbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; "'>SAVE
-												        	<span class="arrow2"></span>
-												        </button>
-													</div>
-												</div>
+														<div class="row">
+															<div class="col-md-4 col-sm-4 col-xs-3">
+																<!-- <button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm1()">
+													        		<span class="arrow3"></span>PREV
+													        	</button> -->
+															</div>
+															<div class="col-md-8 col-sm-8 col-xs-9">
+																<button type="submit" class=" btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addsubbtnedit" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; "'>SAVE CHANGES
+														        	<span class="arrow2"></span>
+														        </button>
+															</div>
+														</div>
 
 
-												<!-- <label for="db">Choose type</label> -->
-<!-- <select name="dbType" id="dbType">
-   <option>Choose Database Type</option>
-   <option value="oracle">Oracle</option>
-   <option value="mssql">MS SQL</option>
-   <option value="mysql">MySQL</option>
-   <option value="other">Other</option>
-</select>
-
-<div id="otherType" style="display:none;">
-<label for="specify">Specify</label>
-<input type="text" name="specify" placeholder="Specify Databse Type"/>
-</div> -->
+														<!-- <label for="db">Choose type</label> -->
+												</form>
 											</div>
-										</form>
+											<div class="col-md-6 col-sm-6">
+												<form action="" method="POST" role="form" class="">
+													<div class="form-group">
+														<p class="f3 __dashmsgp">Edit Images</p>
+
+														<div class="row">
+															<div class="col-md-4 col-sm-4">
+																<img src="assets/img/truck11.jpg" class="img-responsive __delimg">
+																<div class="" style="margin-top: 10px;">
+																	<input class="__renttruk" type="checkbox" id="check1">
+																	<label for="check1" class=""></label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<img src="assets/img/truck11.jpg" class="img-responsive __delimg">
+																<div class="" style="margin-top: 10px;">
+																	<input class="__renttruk" type="checkbox" id="check2">
+																	<label for="check2" class=""></label>
+																</div>
+															</div>
+															<div class="col-md-4 col-sm-4">
+																<img src="assets/img/truck11.jpg" class="img-responsive __delimg">
+																<div class="" style="margin-top: 10px;">
+																	<input class="__renttruk" type="checkbox" id="check3">
+																	<label for="check3" class=""></label>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="col-md-8 col-sm-8 col-xs-9">
+															<button type="submit" class=" btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; background: #f51313; animation-name: fadeInUp; "'>DELETE IMAGES
+													        	<span class="arrow2"></span>
+															</div>
+														<div class="col-md-4 col-sm-4 col-xs-3">
+															<!-- <button type="submit" class=" btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addsubbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; "'>UPLOAD
+													        	<span class="arrow2"></span> -->
+															</button>
+														</div>
+													</div>
+												</form>
+												<hr class="__edithr">
+												<form action="" method="POST" role="form" class="">
+													<div class="form-group">
+														<label for="" class="f1">Truck Image(s) you can select multiple images</label>
+														<input type="file" class="form-control" id="files" name="files[]" multiple>
+													</div>
+													<div class="row">
+														<div class="col-md-2 col-sm-2">
+															<!-- <button type="button" class="btn-custom3 arrow-btn3 f1 f-16 wow fadeInUp waves-effect waves-classic" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s;  animation-name: fadeInUp;"  onclick="showPrevForm1()">
+												        		<span class="arrow3"></span>PREV
+												        	</button> -->
+														</div>
+														<div class="col-md-10 col-sm-10">
+															<button type="submit" class=" btn-customs arrow-btns btn-custom2 arrow-btn2 f1 f-16 wow fadeInUp waves-effect waves-classic __addsubbtn" data-wow-delay=".8s" style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp; "'>UPLOAD NEW IMAGES
+													        	<span class="arrow2"></span>
+															</button>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
 									</div>
-									<div class="col-md-2 col-sm-2"></div>
+									<div class="col-md-1 col-sm-1"></div>
 								</div>
 								<br>
 								<br>
@@ -435,14 +474,6 @@
 
 <script type="text/javascript">
 
-// $('#dbType').on('change',function(){
-//     if( $(this).val()==="other"){
-//     $("#otherType").show();
-//     }
-//     else{
-//     $("#otherType").hide()
-//     }
-// });
 
 
 // show and hide select 
@@ -454,6 +485,16 @@
 		    $("#otherType").hide()
 		    }
 		});
+
+		$('#dbType1').on('change',function(){
+		    if( $(this).val()==="other"){
+		    $("#otherType1").show();
+		    }
+		    else{
+		    $("#otherType1").hide()
+		    }
+		});
+
 
 	
     	$(document).ready(function (){
