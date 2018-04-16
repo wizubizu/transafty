@@ -1266,7 +1266,7 @@ font-size: 16px;
 }
 
 .__abcolor{
-  color: #00aeef ;
+  color: #00aeef !important ;
 }
 
 .__addrea{
@@ -1410,6 +1410,13 @@ margin-top: 10px;
     margin-top: 15px;
     margin-bottom: 15px;
     border: 1px solid #ddf6ff;
+}
+
+.__faqt{
+  padding-top: 2px !important;
+}
+.__faqbdr{
+  border-right: 3px solid #EFEFEF !important;
 }
 
 
@@ -3476,7 +3483,8 @@ ul.hide-bullets > li {
 .form-input4 {
     height: 38px;
     border-radius: 4px;
-     margin-top: -19px; 
+     /*margin-top: -19px;*/ 
+     margin-top: 150px; 
     cursor: pointer;
     /*top: 23%;*/
     border: 1px solid #ccc;
@@ -3930,11 +3938,22 @@ ul.hide-bullets > li {
     height: 190px;
 }
 
+.__seleb button {
+    width: 100% !important;
+    color: #fff !important;
+    padding-top: 5% !important;
+    padding-bottom: 5% !important;
+    font-size: 16px !important;
+    background: #00aeef !important;
+    border-radius: 0 !important;
+}
+
 
 .form-input5 {
     height: 38px;
     border-radius: 4px;
-     margin-top: -18px; 
+     /*margin-top: -18px; */
+     margin-top: 111px; 
     cursor: pointer;
     /*top: 36%;*/
     border: 1px solid #ccc;
@@ -3991,7 +4010,8 @@ ul.hide-bullets > li {
   .form-input4 {
     height: 38px;
     border-radius: 4px;
-     margin-top: -8px; 
+     /*margin-top: -8px;*/ 
+     margin-top: 148px; 
     cursor: pointer;
     /*top: 23%;*/
     border: 1px solid #ccc;
